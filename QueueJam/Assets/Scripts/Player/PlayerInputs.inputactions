@@ -1,0 +1,52 @@
+{
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "9dd9d6ab-41e8-416e-a32e-f6ac1ea17a16",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "c3b06e9c-2365-4e73-b4e1-01cb6d401c41",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MouseDetection",
+                    "type": "Value",
+                    "id": "7c92aa06-8973-4f88-a27f-b8ad655c55ae",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4f44a9fd-ed42-4cae-8f47-bd65cd2fb32b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d61042a5-2198-4098-b988-6329d200f9ee",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDetection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
