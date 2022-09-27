@@ -35,17 +35,15 @@ public class PlayerMouseControl : MonoBehaviour
             _currentSelectable.Selected();
             _swipeDetection.OnButtonDown(_mouseDetection.GetMousePosition());
         }
-
     }
 
     private void Canceled()
     {
-        _swipeDetection.OnButtonUp(_mouseDetection.GetMousePosition());
 
         if (_currentSelectable != null)
         {
             _currentSelectable.Deselect();
-
+            _swipeDetection.OnButtonUp(_mouseDetection.GetButtonUpPosition());
             _currentSelectable = null;
         }
     }

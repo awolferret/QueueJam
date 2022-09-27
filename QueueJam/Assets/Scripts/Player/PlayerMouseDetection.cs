@@ -13,9 +13,7 @@ public class PlayerMouseDetection : MonoBehaviour
 
     public Selectable TrySelect()
     {
-        Ray ray = _mainCamera.ScreenPointToRay(_playerInput.Player.MouseDetection.ReadValue<Vector2>());
-
-        if (Physics.Raycast(ray, out _hit))
+        if (Physics.Raycast(CastRay(), out _hit))
         {
             if (_hit.collider.gameObject.TryGetComponent<Selectable>(out Selectable selectable))
             {
@@ -32,6 +30,18 @@ public class PlayerMouseDetection : MonoBehaviour
         {
             return null;
         }
+    }
+
+    public Vector3 GetButtonUpPosition()
+    {
+        Physics.Raycast(CastRay(), out _hit);
+        return _hit.point;
+    }
+
+    private Ray CastRay()
+    {
+        Ray ray = _mainCamera.ScreenPointToRay(_playerInput.Player.MouseDetection.ReadValue<Vector2>());
+        return ray;
     }
 
     public Vector3 GetMousePosition()
