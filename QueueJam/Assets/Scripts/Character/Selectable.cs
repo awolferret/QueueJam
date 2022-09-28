@@ -19,7 +19,6 @@ public class Selectable : MonoBehaviour
     public void Deselect()
     {
         _renderer.material.color = Color.grey;
-
     }
 
     public void OffMove()

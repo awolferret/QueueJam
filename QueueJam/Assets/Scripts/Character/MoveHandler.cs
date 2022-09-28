@@ -47,14 +47,6 @@ public class MoveHandler : MonoBehaviour
             {
                 _isMoving = true;
 
-                //if (_tail != null)
-                //{
-                //    if (_tail.TryGetComponent<TailMover>(out TailMover tailMover))
-                //    {
-                //        tailMover.Move(_transform.position);
-                //    }
-                //}
-
                 for (int i = 1; i < _tails.Count; i++)
                 {
                     _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
