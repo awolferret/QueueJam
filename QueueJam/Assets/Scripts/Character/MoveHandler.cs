@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MoveHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject _tail;
+    [SerializeField] private List<GameObject> _tails;
     [SerializeField] private Selectable _selectable;
 
     private float _moveSpeed = 0.05f;
@@ -33,10 +33,13 @@ public class MoveHandler : MonoBehaviour
     public void TryMove(Vector3 direction)
     {
         Ray ray = new Ray(transform.position, direction);
+        Ray backRay = new Ray(transform.position, -direction);
         RaycastHit hit;
+        RaycastHit backHit;
         Physics.Raycast(ray, out hit, _rayDistance);
+        Physics.Raycast(backRay, out backHit, _rayDistance);
 
-        if (hit.collider == null)
+        if (hit.collider == null && backHit.collider.gameObject.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
         {
             Vector3 destination = _transform.position + direction;
 
@@ -44,12 +47,18 @@ public class MoveHandler : MonoBehaviour
             {
                 _isMoving = true;
 
-                if (_tail != null)
+                //if (_tail != null)
+                //{
+                //    if (_tail.TryGetComponent<TailMover>(out TailMover tailMover))
+                //    {
+                //        tailMover.Move(_transform.position);
+                //    }
+                //}
+
+                for (int i = 1; i < _tails.Count; i++)
                 {
-                    if (_tail.TryGetComponent<TailMover>(out TailMover tailMover))
-                    {
-                        tailMover.Move(_transform.position);
-                    }
+                    _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
+                    tailMover.Move(_tails[i-1].transform.position);
                 }
 
                 _coroutine = StartCoroutine(Moving(destination));

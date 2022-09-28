@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TailMover : MonoBehaviour
 {
-    [SerializeField] private GameObject _tail;
+    //[SerializeField] private GameObject _tail;
 
     private float _moveSpeed = 0.05f;
     private Transform _transform;
@@ -21,11 +21,11 @@ public class TailMover : MonoBehaviour
     {
         _coroutine = StartCoroutine(Moving(targetPosition));
 
-        if (_tail != null)
-        {
-            _tail.TryGetComponent<TailMover>(out TailMover tailMover);
-            tailMover.Move(transform.position);
-        }
+        //if (_tail != null)
+        //{
+        //    _tail.TryGetComponent<TailMover>(out TailMover tailMover);
+        //    tailMover.Move(transform.position);
+        //}
     }
 
     private IEnumerator Moving(Vector3 targetPosition)
