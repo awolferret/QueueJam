@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class MoveHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject _tail;
+    [SerializeField] private Selectable _selectable;
+
     private float _moveSpeed = 0.05f;
     private float _rayDistance = 1f;
     private Transform _transform;
@@ -27,7 +30,7 @@ public class MoveHandler : MonoBehaviour
         SwipeDetection.SwipeInput -= TryMove;
     }
 
-    private void TryMove(Vector3 direction)
+    public void TryMove(Vector3 direction)
     {
         Ray ray = new Ray(transform.position, direction);
         RaycastHit hit;
@@ -40,9 +43,21 @@ public class MoveHandler : MonoBehaviour
             if (_isMoving == false)
             {
                 _isMoving = true;
+
+                if (_tail != null)
+                {
+                    if (_tail.TryGetComponent<TailMover>(out TailMover tailMover))
+                    {
+                        tailMover.Move(_transform.position);
+                    }
+                }
+
                 _coroutine = StartCoroutine(Moving(destination));
+
             }
         }
+
+        _selectable.OffMove();
     }
 
     private IEnumerator Moving(Vector3 destination)
@@ -56,6 +71,7 @@ public class MoveHandler : MonoBehaviour
             yield return wait;
         }
 
+        _selectable.OffMove();
         _isMoving = false;
     }
 }
