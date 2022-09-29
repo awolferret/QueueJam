@@ -9,8 +9,6 @@ public class PlayerMouseDetection : MonoBehaviour
     private Selectable _currentSelectable;
     private RaycastHit _hit;
 
-    public RaycastHit Hit => _hit;
-
     public Selectable TrySelect()
     {
         if (Physics.Raycast(CastRay(), out _hit))

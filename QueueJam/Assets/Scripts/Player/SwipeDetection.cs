@@ -29,26 +29,29 @@ public class SwipeDetection : MonoBehaviour
 
         if (_delta.magnitude > _minimalDisatanse)
         {
-            if (Mathf.Abs(_delta.x) > Mathf.Abs(_delta.y))
+            if (SwipeInput != null)
             {
-                if (_delta.x > 0)
+                if (Mathf.Abs(_delta.x) > Mathf.Abs(_delta.y))
                 {
-                    SwipeInput(Vector3.right);
+                    if (_delta.x > 0)
+                    {
+                        SwipeInput(Vector3.right);
+                    }
+                    else
+                    {
+                        SwipeInput(Vector3.left);
+                    }
                 }
                 else
                 {
-                    SwipeInput(Vector3.left);
-                }
-            }
-            else
-            {
-                if (_delta.y > 0)
-                {
-                    SwipeInput(Vector3.forward);
-                }
-                else
-                {
-                    SwipeInput(Vector3.back);
+                    if (_delta.y > 0)
+                    {
+                        SwipeInput(Vector3.forward);
+                    }
+                    else
+                    {
+                        SwipeInput(Vector3.back);
+                    }
                 }
             }
         }

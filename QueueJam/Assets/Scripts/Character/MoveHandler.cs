@@ -14,6 +14,7 @@ public class MoveHandler : MonoBehaviour
     private Transform _transform;
     private bool _isMoving = false;
     private Coroutine _coroutine;
+    private Vector3 _currentDirection;
 
     private void Start()
     {
@@ -30,35 +31,61 @@ public class MoveHandler : MonoBehaviour
         SwipeDetection.SwipeInput -= TryMove;
     }
 
-    public void TryMove(Vector3 direction)
+    private void TryMove(Vector3 direction)
     {
         Ray ray = new Ray(transform.position, direction);
         Ray backRay = new Ray(transform.position, -direction);
         RaycastHit hit;
         RaycastHit backHit;
-        Physics.Raycast(ray, out hit, _rayDistance);
+        Physics.Raycast(ray, out hit);
         Physics.Raycast(backRay, out backHit, _rayDistance);
+        Vector3 destination;
 
-        if (hit.collider == null && backHit.collider.gameObject.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
+        if (hit.collider.GetComponent<ExitBlock>())
         {
-            Vector3 destination = _transform.position + direction;
-
-            if (_isMoving == false)
-            {
-                _isMoving = true;
-
-                for (int i = 1; i < _tails.Count; i++)
-                {
-                    _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
-                    tailMover.Move(_tails[i-1].transform.position);
-                }
-
-                _coroutine = StartCoroutine(Moving(destination));
-
-            }
+            destination = hit.collider.transform.position;
+        }
+        else 
+        {
+            destination = hit.point - (direction / 2);
         }
 
-        _selectable.OffMove();
+
+        if (_isMoving == false)
+        {
+            if (_tails.Count > 0)
+            {
+                if (backHit.collider.gameObject == _tails[0].gameObject)
+                {
+                    _isMoving = true;
+                    _coroutine = StartCoroutine(Moving(destination));
+
+                    for (int i = 0; i < _tails.Count; i++)
+                    {
+                        _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
+                        tailMover.Move(destination - (direction * (i + 1)));
+                    }
+                }
+                else
+                {
+                    _selectable.OffMove();
+                }
+            }
+            else
+            {
+                _isMoving = true;
+                _coroutine = StartCoroutine(Moving(destination));
+            }
+        }
+        else 
+        {
+            _selectable.OffMove();
+        }
+    }
+
+    private void MoveToExit()
+    { 
+        
     }
 
     private IEnumerator Moving(Vector3 destination)
