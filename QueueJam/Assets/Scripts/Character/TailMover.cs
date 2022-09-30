@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class TailMover : MonoBehaviour
 {
-    private float _moveSpeed = 0.05f;
     private Transform _transform;
     private Coroutine _coroutine;
 
@@ -15,19 +14,19 @@ public class TailMover : MonoBehaviour
         _transform = GetComponent<Transform>();
     }
 
-    public void Move(Vector3 targetPosition)
+    public void Move(Vector3 targetPosition,float moveSpeed)
     {
-        _coroutine = StartCoroutine(Moving(targetPosition));
+        _coroutine = StartCoroutine(Moving(targetPosition, moveSpeed));
     }
 
-    private IEnumerator Moving(Vector3 targetPosition)
+    private IEnumerator Moving(Vector3 targetPosition, float moveSpeed)
     {
         float waitTime = 0.01f;
         var wait = new WaitForSeconds(waitTime);
 
         while (_transform.position != targetPosition)
         {
-            _transform.position = Vector3.MoveTowards(transform.position, targetPosition, _moveSpeed);
+            _transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed);
             yield return wait;
         }
     }

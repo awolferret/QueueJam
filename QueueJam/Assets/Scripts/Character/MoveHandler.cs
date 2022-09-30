@@ -16,6 +16,13 @@ public class MoveHandler : MonoBehaviour
     private Coroutine _coroutine;
     private Vector3 _currentDirection;
 
+    public List<GameObject> Tails => _tails;
+
+    public void MoveTo(Vector3 direction)
+    {
+        _coroutine = StartCoroutine(Moving(direction));
+    }
+
     private void Start()
     {
         _transform = GetComponent<Transform>();
@@ -39,17 +46,7 @@ public class MoveHandler : MonoBehaviour
         RaycastHit backHit;
         Physics.Raycast(ray, out hit);
         Physics.Raycast(backRay, out backHit, _rayDistance);
-        Vector3 destination;
-
-        if (hit.collider.GetComponent<ExitBlock>())
-        {
-            destination = hit.collider.transform.position;
-        }
-        else 
-        {
-            destination = hit.point - (direction / 2);
-        }
-
+        Vector3 destination = hit.point - (direction / 2);
 
         if (_isMoving == false)
         {
@@ -63,7 +60,7 @@ public class MoveHandler : MonoBehaviour
                     for (int i = 0; i < _tails.Count; i++)
                     {
                         _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
-                        tailMover.Move(destination - (direction * (i + 1)));
+                        tailMover.Move(destination - (direction * (i + 1)),_moveSpeed);
                     }
                 }
                 else
@@ -81,11 +78,6 @@ public class MoveHandler : MonoBehaviour
         {
             _selectable.OffMove();
         }
-    }
-
-    private void MoveToExit()
-    { 
-        
     }
 
     private IEnumerator Moving(Vector3 destination)
