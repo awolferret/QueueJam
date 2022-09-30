@@ -21,7 +21,7 @@ public class Border : MonoBehaviour
     private IEnumerator MoveToExit()
     {
         float delay = 0.3f;
-        float speed = 0.4f;
+        float speed = 0.5f;
         var waitType = new WaitForSeconds(delay);
 
         yield return waitType;
