@@ -40,13 +40,15 @@ public class MoveHandler : MonoBehaviour
 
     private void TryMove(Vector3 direction)
     {
+        float one = 1;
+        float half = 2; 
         Ray ray = new Ray(transform.position, direction);
         Ray backRay = new Ray(transform.position, -direction);
         RaycastHit hit;
         RaycastHit backHit;
         Physics.Raycast(ray, out hit);
         Physics.Raycast(backRay, out backHit, _rayDistance);
-        Vector3 destination = hit.point - (direction / 2);
+        Vector3 destination = hit.point - (direction / half);
 
         if (_isMoving == false)
         {
@@ -60,7 +62,7 @@ public class MoveHandler : MonoBehaviour
                     for (int i = 0; i < _tails.Count; i++)
                     {
                         _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
-                        tailMover.Move(destination - (direction * (i + 1)),_moveSpeed);
+                        tailMover.Move(destination - (direction * (i + one)),_moveSpeed);
                     }
                 }
                 else
