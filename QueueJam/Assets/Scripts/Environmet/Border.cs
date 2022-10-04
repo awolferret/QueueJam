@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Border : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> _exitPoints;
+    [SerializeField] private List<Transform> _exitPoints;
 
     private Coroutine _coroutine;
     private MoveHandler _handler;
+    private Transform _firstPoint;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
         {
+            _firstPoint = moveHandler.gameObject.transform;
+            _exitPoints[0] = _firstPoint;
             _handler = moveHandler;
             _coroutine = StartCoroutine(MoveToExit());
         }
@@ -20,11 +24,10 @@ public class Border : MonoBehaviour
 
     private IEnumerator MoveToExit()
     {
-        float delay = 0.3f;
-        float speed = 0.5f;
-        var waitType = new WaitForSeconds(delay);
-
-        yield return waitType;
+        float delay = 0.8f;
+        float speed = 0.8f;
+        var wait = new WaitForSeconds(delay);
+        var tailWait = new WaitForSeconds((delay / _handler.Tails.Count));
 
         for (int i = 0; i < _exitPoints.Count; i++)
         {
@@ -33,19 +36,22 @@ public class Border : MonoBehaviour
 
             if (_handler.Tails.Count > 0)
             {
-                for (int j = 0; j < _handler.Tails.Count; j++)
+                foreach (var tail in _handler.Tails)
                 {
-                    yield return waitType;
-                    _handler.Tails[j].TryGetComponent<TailMover>(out TailMover tailMover);
-                    tailMover.Move(_exitPoints[i].transform.position, speed);
+                    yield return tailWait;
+                    tail.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    tail.TryGetComponent<TailMover>(out TailMover tailMover);
+                    ExitSequence(tail, i, speed);
                 }
             }
-            else
-            {
 
-                yield return waitType;
-            }
-
+            yield return wait;
         }
+    }
+
+    private void ExitSequence(GameObject gameObject,int index,float speed)
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(gameObject.transform.DOMove(_exitPoints[index].position, speed));
     }
 }

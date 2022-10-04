@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(Transform))]
 
 public class TailMover : MonoBehaviour
 {
+    [SerializeField] private CharacterAnimationHandler _animationHandler;
+    [SerializeField] private CharacterParticlesHandler _particlesHandler;
+
     private Transform _transform;
     private Coroutine _coroutine;
 
@@ -14,20 +18,24 @@ public class TailMover : MonoBehaviour
         _transform = GetComponent<Transform>();
     }
 
-    public void Move(Vector3 targetPosition,float moveSpeed)
+    public void Move(Vector3 targetPosition,float moveTime)
     {
-        _coroutine = StartCoroutine(Moving(targetPosition, moveSpeed));
+        Quaternion quaternion;
+        Vector3 lookDirection = targetPosition - transform.position;
+        quaternion = Quaternion.LookRotation(-lookDirection, Vector3.up);
+        transform.rotation = quaternion;
+        _animationHandler.PlayRunningAnimation();
+        _particlesHandler.StartParticles();
+        transform.DOMove(targetPosition, moveTime);
+        _coroutine = StartCoroutine(OffMovingEffects(targetPosition));
     }
 
-    private IEnumerator Moving(Vector3 targetPosition, float moveSpeed)
+    private IEnumerator OffMovingEffects(Vector3 targetPosition)
     {
-        float waitTime = 0.01f;
+        float waitTime = 0.5f;
         var wait = new WaitForSeconds(waitTime);
-
-        while (_transform.position != targetPosition)
-        {
-            _transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed);
-            yield return wait;
-        }
+        yield return wait;
+        _animationHandler.PlayIdleAnimation();
+        _particlesHandler.StopParticles();
     }
 }

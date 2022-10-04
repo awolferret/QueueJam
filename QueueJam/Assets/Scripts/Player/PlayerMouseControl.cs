@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMouseControl : MonoBehaviour
@@ -42,7 +40,6 @@ public class PlayerMouseControl : MonoBehaviour
 
         if (_currentSelectable != null)
         {
-            _currentSelectable.Deselect();
             _swipeDetection.OnButtonUp(_mouseDetection.GetButtonUpPosition());
             _currentSelectable = null;
         }
