@@ -60,6 +60,11 @@ public class MoveHandler : MonoBehaviour
                     transform.DOMove(destination, _moveTime);
                     _coroutine = StartCoroutine(OffMovingEffects(destination));
 
+                    if (hit.collider.TryGetComponent<Border>(out Border border))
+                    {
+                        border.SpawnCar(destination);
+                    }
+
                     for (int i = 0; i < _tails.Count; i++)
                     {
                         _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
@@ -75,6 +80,11 @@ public class MoveHandler : MonoBehaviour
                 _particlesHandler.StartParticles();
                 transform.DOMove(destination, _moveTime);
                 _coroutine = StartCoroutine(OffMovingEffects(destination));
+
+                if (hit.collider.TryGetComponent<Border>(out Border border))
+                {
+                    border.SpawnCar(destination);
+                }
             }
         }
         else
