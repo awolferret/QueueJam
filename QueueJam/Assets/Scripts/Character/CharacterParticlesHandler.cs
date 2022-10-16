@@ -23,7 +23,7 @@ public class CharacterParticlesHandler : MonoBehaviour
 
     private IEnumerator OffParticles()
     {
-        float time = 0.5f;
+        float time = 0.1f;
         var waitType = new WaitForSeconds(time);
         yield return waitType;
         _stopParticles.SetActive(false);

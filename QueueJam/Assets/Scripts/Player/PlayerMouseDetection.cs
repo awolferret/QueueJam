@@ -34,15 +34,15 @@ public class PlayerMouseDetection : MonoBehaviour
         return _hit.point;
     }
 
+    public Vector3 GetMousePosition()
+    { 
+        return _hit.point;
+    }
+
     private Ray CastRay()
     {
         Ray ray = _mainCamera.ScreenPointToRay(_playerInput.Player.MouseDetection.ReadValue<Vector2>());
         return ray;
-    }
-
-    public Vector3 GetMousePosition()
-    { 
-        return _hit.point;
     }
 
     private void Awake()

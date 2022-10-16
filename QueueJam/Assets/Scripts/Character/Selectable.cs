@@ -36,7 +36,7 @@ public class Selectable : MonoBehaviour
 
     private IEnumerator OffMoveCoroutine()
     {
-        float waitTime = 0.2f;
+        float waitTime = 1f;
         var waitType = new WaitForSeconds(waitTime);
         yield return waitType;
         OffMove();

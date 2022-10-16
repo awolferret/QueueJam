@@ -1,22 +1,13 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
-
-[RequireComponent(typeof(Transform))]
 
 public class TailMover : MonoBehaviour
 {
     [SerializeField] private CharacterAnimationHandler _animationHandler;
     [SerializeField] private CharacterParticlesHandler _particlesHandler;
 
-    private Transform _transform;
     private Coroutine _coroutine;
-
-    private void Start()
-    {
-        _transform = GetComponent<Transform>();
-    }
 
     public void Move(Vector3 targetPosition,float moveTime)
     {
@@ -27,10 +18,10 @@ public class TailMover : MonoBehaviour
         _animationHandler.PlayRunningAnimation();
         _particlesHandler.StartParticles();
         transform.DOMove(targetPosition, moveTime);
-        _coroutine = StartCoroutine(OffMovingEffects(targetPosition));
+        _coroutine = StartCoroutine(OffMovingEffects());
     }
 
-    private IEnumerator OffMovingEffects(Vector3 targetPosition)
+    private IEnumerator OffMovingEffects()
     {
         float waitTime = 0.5f;
         var wait = new WaitForSeconds(waitTime);

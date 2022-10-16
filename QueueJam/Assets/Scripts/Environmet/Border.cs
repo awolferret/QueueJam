@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class Border : MonoBehaviour
 {
     [SerializeField] private List<Transform> _exitPoints;
     [SerializeField] private GameObject _carPrefab;
     [SerializeField] private GameObject _carAppearanceEffect;
-    [SerializeField] private Transform _hidingPoint;
 
     private Coroutine _coroutine;
     private MoveHandler _handler;
@@ -40,7 +38,9 @@ public class Border : MonoBehaviour
     {
         float delay = 0.2f;
         float speed = 0.4f;
+        float animationTime = 0.5f;
         var wait = new WaitForSeconds(delay);
+        var animationWait = new WaitForSeconds(animationTime * _gameObjects.Count);
         var tailWait = new WaitForSeconds((delay / _handler.Tails.Count));
 
         _handler.TryGetComponent<TailMover>(out TailMover tailMoverFirst);
@@ -52,23 +52,33 @@ public class Border : MonoBehaviour
             foreach (var tail in _handler.Tails)
             {
                 yield return tailWait;
-                //tail.gameObject.GetComponent<BoxCollider>().enabled = false;
                 tail.TryGetComponent<TailMover>(out TailMover tailMover);
                 tailMover.Move(_exitPoints[0].position, speed);
             }
         }
 
-        yield return wait;
+        yield return animationWait;
         RemoveCharacters();
     }
 
     private IEnumerator CarAppearance(Vector3 position)
     {
+        float effectWait = 0.1f;
+        float carWait = 1.5f;
+        int firstPosition = 1;
+        var effectWaitType = new WaitForSeconds(effectWait);
+        var carWaittype = new WaitForSeconds(carWait);
+        Vector3 gap = new Vector3(0, 0.3f, 0);
+        Vector3 carSpawnPosition = position + gap;
         GameObject effect = Instantiate(_carAppearanceEffect, position, Quaternion.identity);
-        yield return new WaitForSeconds(0.1f);
-        GameObject car = Instantiate(_carPrefab, position, Quaternion.identity);
+        yield return effectWaitType;
+        GameObject car = Instantiate(_carPrefab, carSpawnPosition, Quaternion.identity);
+        car.transform.LookAt(_exitPoints[firstPosition].position);
         _coroutine = StartCoroutine(OffEffect(effect));
-        yield return new WaitForSeconds(1f);
+        yield return carWaittype;
+        car.GetComponent<CarSoundSystem>().PlayCarDoorSound();
+        yield return effectWaitType;
+        car.GetComponent<CarSoundSystem>().PlayCarRideSound();
         _coroutine = StartCoroutine(DriveCarToExit(car));
     }
 
@@ -97,8 +107,15 @@ public class Border : MonoBehaviour
     {
         foreach (var gameObject in _gameObjects)
         {
-            //gameObject.GetComponent<TailMover>().Move(_hidingPoint.position, 0.1f);
-            gameObject.SetActive(false);
+            SkinnedMeshRenderer[] array = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+
+            foreach (var item in array)
+            {
+                item.enabled = false;
+            }
         }
+
+        _gameObjects.Clear();
     }
 }

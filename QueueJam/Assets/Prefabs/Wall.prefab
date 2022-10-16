@@ -28,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242914562426874790}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 3.2, y: 0.851, z: 5.07}
-  m_LocalScale: {x: 0.10000003, y: 1.08, z: 12.640004}
+  m_LocalScale: {x: 0.10000006, y: 1.08, z: 8.090001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242914562426874790}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -109,6 +109,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b1e45e578d7274aa79c3538ea1c5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _exitPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _carPrefab: {fileID: 8398103739495003488, guid: f394647862c90e644aaa47c50d3b861f, type: 3}
+  _carAppearanceEffect: {fileID: 896101523342851817, guid: f7a150cde892d90478222a9045d4b3ac, type: 3}
+  _hidingPoint: {fileID: 0}
+  _GetInCarEffect: {fileID: 1760741567964479430, guid: 01796890cd4afc8459634f68c5b492be, type: 3}
 --- !u!54 &2242914562426874792
 Rigidbody:
   m_ObjectHideFlags: 0
