@@ -4,7 +4,6 @@ public class PlayerMouseDetection : MonoBehaviour
 {
     private PlayerInputs _playerInput;
     private Camera _mainCamera;
-    private Selectable _currentSelectable;
     private RaycastHit _hit;
 
     public Selectable TrySelect()

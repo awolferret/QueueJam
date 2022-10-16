@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -10,7 +8,6 @@ public class CarSoundSystem : MonoBehaviour
     [SerializeField] private AudioClip _getInCarSound;
     [SerializeField] private AudioClip _carDoor;
     [SerializeField] private AudioClip _carRideSound;
-
     [SerializeField] private AudioSource _audioSource;
 
     public void PlayCarIsReadySound()
