@@ -61,8 +61,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616947760162338109, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Name
-      value: Worker (3)
+      value: GuyInHat
       objectReference: {fileID: 0}
+    - target: {fileID: 2179868739282398504, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d150221c5ae4748ee8e97f0d473b3c91, type: 2}
     - target: {fileID: 5031819869362200836, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Mesh
       value: 

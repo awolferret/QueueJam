@@ -61,12 +61,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616947760162338109, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Name
-      value: Worker (1)
+      value: Boxer
       objectReference: {fileID: 0}
     - target: {fileID: 616947760162338109, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2179868739282398504, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ffff4954cf1d4e6dbc20b4ebd9a03cd, type: 2}
     - target: {fileID: 4361682105597374704, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Mesh
       value: 

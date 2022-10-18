@@ -55,10 +55,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 310395885269933086, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 616947760162338109, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Name
-      value: Worker (2)
+      value: Thief
       objectReference: {fileID: 0}
+    - target: {fileID: 2179868739282398504, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebd094c9d8fa7491595558541626643b, type: 2}
     - target: {fileID: 4361682105597374704, guid: 750cb7a246420ec42b082ce33a31fbe9, type: 3}
       propertyPath: m_Mesh
       value: 
