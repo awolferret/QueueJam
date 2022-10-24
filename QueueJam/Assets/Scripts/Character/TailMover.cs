@@ -9,15 +9,19 @@ public class TailMover : MonoBehaviour
 
     private Coroutine _coroutine;
 
-    public void Move(Vector3 targetPosition,float moveTime)
+    public void LookForward(Vector3 targetPosition)
     {
         Quaternion quaternion;
         Vector3 lookDirection = targetPosition - transform.position;
-        quaternion = Quaternion.LookRotation(-lookDirection, Vector3.up);
+        quaternion = Quaternion.LookRotation(lookDirection, Vector3.up);
         transform.rotation = quaternion;
+    }
+
+    public void Move(Vector3 targetPosition,float moveTime)
+    {
         _animationHandler.PlayRunningAnimation();
         _particlesHandler.StartParticles();
-        transform.DOMove(targetPosition, moveTime);
+        transform.DOMove(targetPosition, moveTime).SetEase(Ease.Linear);
         _coroutine = StartCoroutine(OffMovingEffects());
     }
 

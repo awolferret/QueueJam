@@ -14,7 +14,6 @@ public class MoveHandler : MonoBehaviour
     [SerializeField] private EmotionHandler _emotionHandler;
 
     private float _moveTime = 0.5f;
-    private float _rayDistance = 1f;
     private bool _isMoving = false;
     private Coroutine _coroutine;
     private Vector3 _currentDirection;
@@ -44,40 +43,33 @@ public class MoveHandler : MonoBehaviour
         float minimalDistance = 1f;
         Quaternion quaternion;
         Ray ray = new Ray(transform.position, direction);
-        Ray backRay = new Ray(transform.position, -direction);
         RaycastHit hit;
-        RaycastHit backHit;
         Physics.Raycast(ray, out hit);
-        Physics.Raycast(backRay, out backHit, _rayDistance);
         Vector3 lookDirection = hit.point - transform.position;
         Vector3 destination = hit.point - ((direction / half)/half);
-        quaternion = Quaternion.LookRotation(-lookDirection, Vector3.up);
+        quaternion = Quaternion.LookRotation(lookDirection, Vector3.up);
         float distance = Vector3.Distance(transform.position,hit.point);
-        transform.rotation = quaternion;
 
         if (_isMoving == false && distance > minimalDistance)
         {
-            if (_tails.Count > 0)
+            if (direction == transform.forward || direction == -transform.forward)
             {
-                if (backHit.collider.gameObject == _tails[0].gameObject)
-                {
-                    Move(destination, hit);
+                Move(destination, hit, direction);
 
-                    for (int i = 0; i < _tails.Count; i++)
-                    {
-                        _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
-                        tailMover.Move(destination - (direction * (i + one)), _moveTime);
-                    }
-                }
-                else
+                transform.rotation = quaternion;
+
+                for (int i = 0; i < _tails.Count; i++)
                 {
-                    CantMoveEffect();
+                    _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
+                    tailMover.LookForward(destination - (direction * (i + one)));
+                    tailMover.Move(destination - (direction * (i + one)), _moveTime);
                 }
             }
             else
             {
-                Move(destination,hit);
+                CantMoveEffect();
             }
+            
         }
         else
         {
@@ -94,13 +86,13 @@ public class MoveHandler : MonoBehaviour
         }
     }
 
-    private void Move(Vector3 destination,RaycastHit hit)
+    private void Move(Vector3 destination,RaycastHit hit,Vector3 direction)
     {
         _isMoving = true;
         _animationHandler.PlayRunningAnimation();
         _particlesHandler.StartParticles();
-        transform.DOMove(destination, _moveTime);
-        _coroutine = StartCoroutine(OffMovingEffects());
+        transform.DOMove(destination, _moveTime).SetEase(Ease.Linear);
+        _coroutine = StartCoroutine(OffMovingEffects(direction,hit));
 
         if (hit.collider.TryGetComponent<Border>(out Border border))
         {
@@ -117,13 +109,23 @@ public class MoveHandler : MonoBehaviour
         moveHandler.CantMoveEffect();
     }
 
-    private IEnumerator OffMovingEffects()
+    private IEnumerator OffMovingEffects(Vector3 direction, RaycastHit hit)
     {
         float waitTime = 0.5f;
         var wait = new WaitForSeconds(waitTime);
         yield return wait;
         _animationHandler.PlayIdleAnimation();
         _particlesHandler.StopParticles();
+        CantMoveEffect();
+
+        if (hit.collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
+        {
+            obstacle.PlayEffect(direction);
+        }
+        if (hit.collider.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
+        {
+            _coroutine = StartCoroutine(PushSomeone(moveHandler));
+        }
         _isMoving = false;
     }
 }

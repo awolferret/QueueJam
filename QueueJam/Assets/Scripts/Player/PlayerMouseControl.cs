@@ -9,12 +9,13 @@ public class PlayerMouseControl : MonoBehaviour
 
     private PlayerInputs _playerInputs;
     private Selectable _currentSelectable;
+    private Coroutine _coroutine;
 
     private void Awake()
     {
         _playerInputs = new PlayerInputs();
         _playerInputs.Player.Select.performed += context => Selected();
-        _playerInputs.Player.Select.canceled += context => Canceled();
+        //_playerInputs.Player.Select.canceled += context => Canceled();
     }
 
     private void OnEnable()
@@ -40,6 +41,8 @@ public class PlayerMouseControl : MonoBehaviour
                 _tutuorialEffect.SetActive(false);
             }
         }
+
+        _coroutine = StartCoroutine(Cancel());
     }
 
     private void Canceled()
@@ -47,7 +50,14 @@ public class PlayerMouseControl : MonoBehaviour
         if (_currentSelectable != null)
         {
             _swipeDetection.OnButtonUp(_mouseDetection.GetButtonUpPosition());
+            _currentSelectable.OffMove();
             _currentSelectable = null;
         }
+    }
+
+    private IEnumerator Cancel()
+    {
+        yield return new WaitForSeconds(0.15f);
+        Canceled();
     }
 }
