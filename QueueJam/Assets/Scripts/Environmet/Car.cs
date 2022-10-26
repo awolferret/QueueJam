@@ -1,16 +1,16 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections.Generic;
 
 public class Car : MonoBehaviour
 {
     [SerializeField] private CarSoundSystem _carSound;
 
-    private float _moveTime = 0.5f;
+    private float _moveTime = 2f;
 
-    public void MoveToExit(Vector3 destination)
+    public void MoveToExit(Vector3[] waypoints)
     {
-        transform.LookAt(destination);
-        transform.DOMove(destination, _moveTime).SetEase(Ease.Linear);
+        Tween tween = transform.DOPath(waypoints, _moveTime, PathType.Linear).SetLookAt(0.01f).SetEase(Ease.Linear);
     }
 
     private void Start()

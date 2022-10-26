@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Border : MonoBehaviour
 {
-    [SerializeField] private List<Transform> _exitPoints;
+    [SerializeField] private Vector3[] _waypoints;
     [SerializeField] private GameObject _carPrefab;
     [SerializeField] private GameObject _carAppearanceEffect;
 
@@ -28,7 +28,6 @@ public class Border : MonoBehaviour
         if (other.gameObject.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
         {
             _firstPoint = moveHandler.gameObject.transform;
-            _exitPoints[0] = _firstPoint;
             _handler = moveHandler;
             _coroutine = StartCoroutine(MoveToExitPoint());
         }
@@ -45,7 +44,7 @@ public class Border : MonoBehaviour
 
         _handler.TryGetComponent<TailMover>(out TailMover tailMoverFirst);
         _gameObjects.Add(_handler.gameObject);
-        tailMoverFirst.Move(_exitPoints[0].transform.position, speed);
+        tailMoverFirst.Move(_firstPoint.position, speed);
 
         if (_handler.Tails.Count > 0)
         {
@@ -53,7 +52,7 @@ public class Border : MonoBehaviour
             {
                 yield return tailWait;
                 tail.TryGetComponent<TailMover>(out TailMover tailMover);
-                tailMover.Move(_exitPoints[0].position, speed);
+                tailMover.Move(_firstPoint.position, speed);
             }
         }
 
@@ -65,7 +64,6 @@ public class Border : MonoBehaviour
     {
         float effectWait = 0.1f;
         float carWait = 1.5f;
-        int firstPosition = 1;
         var effectWaitType = new WaitForSeconds(effectWait);
         var carWaittype = new WaitForSeconds(carWait);
         Vector3 gap = new Vector3(0, 0.3f, 0);
@@ -73,26 +71,19 @@ public class Border : MonoBehaviour
         GameObject effect = Instantiate(_carAppearanceEffect, position, Quaternion.identity);
         yield return effectWaitType;
         GameObject car = Instantiate(_carPrefab, carSpawnPosition, Quaternion.identity);
-        car.transform.LookAt(_exitPoints[firstPosition].position);
+        car.transform.LookAt(_waypoints[0]);
         _coroutine = StartCoroutine(OffEffect(effect));
         yield return carWaittype;
         car.GetComponent<CarSoundSystem>().PlayCarDoorSound();
         yield return effectWaitType;
         car.GetComponent<CarSoundSystem>().PlayCarRideSound();
-        _coroutine = StartCoroutine(DriveCarToExit(car));
+        DriveToExit(car);
     }
 
-    private IEnumerator DriveCarToExit(GameObject gameObject)
-    {
-        float time = 1f;
-        var wait = new WaitForSeconds(time);
-
-        for (int i = 1; i < _exitPoints.Count; i++)
-        {
-            gameObject.TryGetComponent<Car>(out Car car);
-            car.MoveToExit(_exitPoints[i].position);
-            yield return wait;
-        }
+    private void DriveToExit(GameObject gameObject)
+    { 
+        gameObject.TryGetComponent<Car>(out Car car);
+        car.MoveToExit(_waypoints);
     }
 
     private IEnumerator OffEffect(GameObject effect)

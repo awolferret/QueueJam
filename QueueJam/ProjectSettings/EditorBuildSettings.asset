@@ -74,7 +74,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level20.unity
     guid: dcb3160d8666d874db0f95fa58940eea
-  - enabled: 1
-    path: Assets/JellyShader/Example/Scenes/ExampleScene.unity
-    guid: f928b5cc7e6a9ca41b1920896c2353ac
   m_configObjects: {}
