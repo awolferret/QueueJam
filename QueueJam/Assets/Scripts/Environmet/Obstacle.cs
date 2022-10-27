@@ -8,6 +8,7 @@ public class Obstacle : MonoBehaviour
     private Vector3 _startScale;
     private Vector3 _startPosition;
     private Coroutine _coroutine;
+    private float _sizeChangeAmount = 0.05f;
 
     public void PlayEffect(Vector3 direction)
     {
@@ -22,9 +23,11 @@ public class Obstacle : MonoBehaviour
 
     private IEnumerator HitEffect(Vector3 direction)
     {
-        _transform.localScale = _startScale + new Vector3(0.05f, 0.05f, 0.05f);
-        _transform.position = _startPosition + (direction * 0.05f);
-        yield return new WaitForSeconds(0.1f);
+        float wait = 0.01f;
+        var waitType = new WaitForSeconds(wait);
+        _transform.localScale = _startScale + new Vector3(_sizeChangeAmount, _sizeChangeAmount, _sizeChangeAmount);
+        _transform.position = _startPosition + (direction * _sizeChangeAmount);
+        yield return waitType;
         _transform.localScale = _startScale;
         _transform.position = _startPosition;
     }

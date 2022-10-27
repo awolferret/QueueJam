@@ -38,22 +38,17 @@ public class Border : MonoBehaviour
         float delay = 0.2f;
         float speed = 0.4f;
         float animationTime = 0.5f;
-        var wait = new WaitForSeconds(delay);
         var animationWait = new WaitForSeconds(animationTime * _gameObjects.Count);
         var tailWait = new WaitForSeconds((delay / _handler.Tails.Count));
-
         _handler.TryGetComponent<TailMover>(out TailMover tailMoverFirst);
         _gameObjects.Add(_handler.gameObject);
         tailMoverFirst.Move(_firstPoint.position, speed);
 
-        if (_handler.Tails.Count > 0)
+        foreach (var tail in _handler.Tails)
         {
-            foreach (var tail in _handler.Tails)
-            {
-                yield return tailWait;
-                tail.TryGetComponent<TailMover>(out TailMover tailMover);
-                tailMover.Move(_firstPoint.position, speed);
-            }
+            yield return tailWait;
+            tail.TryGetComponent<TailMover>(out TailMover tailMover);
+            tailMover.Move(_firstPoint.position, speed);
         }
 
         yield return animationWait;
@@ -64,19 +59,17 @@ public class Border : MonoBehaviour
     {
         float effectWait = 0.1f;
         float carWait = 1.5f;
+        float gapSize = 0.3f;
         var effectWaitType = new WaitForSeconds(effectWait);
-        var carWaittype = new WaitForSeconds(carWait);
-        Vector3 gap = new Vector3(0, 0.3f, 0);
+        var carWaitType = new WaitForSeconds(carWait);
+        Vector3 gap = new Vector3(0, gapSize, 0);
         Vector3 carSpawnPosition = position + gap;
         GameObject effect = Instantiate(_carAppearanceEffect, position, Quaternion.identity);
         yield return effectWaitType;
         GameObject car = Instantiate(_carPrefab, carSpawnPosition, Quaternion.identity);
         car.transform.LookAt(_waypoints[0]);
         _coroutine = StartCoroutine(OffEffect(effect));
-        yield return carWaittype;
-        car.GetComponent<CarSoundSystem>().PlayCarDoorSound();
-        yield return effectWaitType;
-        car.GetComponent<CarSoundSystem>().PlayCarRideSound();
+        yield return carWaitType;
         DriveToExit(car);
     }
 

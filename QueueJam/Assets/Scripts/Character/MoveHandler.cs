@@ -20,10 +20,24 @@ public class MoveHandler : MonoBehaviour
 
     public List<GameObject> Tails => _tails;
 
-    public void CantMoveEffect()
+    public void Pushed()
     {
         _animationHandler.PlayCantMoveAnimation();
         _emotionHandler.ShowAngryEmotion();
+    }
+
+    private void CantMoveEffect(RaycastHit hit, Vector3 direction)
+    {
+        Pushed();
+
+        if (hit.collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
+        {
+            obstacle.PlayEffect(direction);
+        }
+        if (hit.collider.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
+        {
+            _coroutine = StartCoroutine(PushSomeone(moveHandler,hit,direction));
+        }
     }
 
     private void OnEnable()
@@ -61,28 +75,19 @@ public class MoveHandler : MonoBehaviour
                 for (int i = 0; i < _tails.Count; i++)
                 {
                     _tails[i].TryGetComponent<TailMover>(out TailMover tailMover);
-                    tailMover.LookForward(destination - (direction * (i + one)));
+                    tailMover.LookForward(destination - (direction * (i + one) / half));
                     tailMover.Move(destination - (direction * (i + one)), _moveTime);
                 }
             }
             else
             {
-                CantMoveEffect();
+                CantMoveEffect(hit,direction);
             }
             
         }
         else
         {
-            CantMoveEffect();
-
-            if (hit.collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
-            {
-                obstacle.PlayEffect(direction);
-            }
-            if (hit.collider.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
-            {
-                _coroutine = StartCoroutine(PushSomeone(moveHandler));
-            }
+            CantMoveEffect(hit, direction);
         }
     }
 
@@ -101,12 +106,14 @@ public class MoveHandler : MonoBehaviour
         }
     }
 
-    private IEnumerator PushSomeone(MoveHandler moveHandler)
+    private IEnumerator PushSomeone(MoveHandler moveHandler,RaycastHit hit,Vector3 direction)
     {
-        float waitTime = Random.Range(0.1f,0.3f);
+        float minWait = 0.05f;
+        float maxWait = 0.2f;
+        float waitTime = Random.Range(minWait, maxWait);
         var wait = new WaitForSeconds(waitTime);
         yield return wait;
-        moveHandler.CantMoveEffect();
+        moveHandler.Pushed();
     }
 
     private IEnumerator OffMovingEffects(Vector3 direction, RaycastHit hit)
@@ -116,16 +123,7 @@ public class MoveHandler : MonoBehaviour
         yield return wait;
         _animationHandler.PlayIdleAnimation();
         _particlesHandler.StopParticles();
-        CantMoveEffect();
-
-        if (hit.collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
-        {
-            obstacle.PlayEffect(direction);
-        }
-        if (hit.collider.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
-        {
-            _coroutine = StartCoroutine(PushSomeone(moveHandler));
-        }
+        CantMoveEffect(hit, direction);
         _isMoving = false;
     }
 }
