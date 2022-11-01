@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EndLevelTrigger : MonoBehaviour
 {
@@ -8,17 +9,19 @@ public class EndLevelTrigger : MonoBehaviour
     [SerializeField] private AudioClip _winSoundSecond;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private SaveLevel _saveLevel;
+    [SerializeField] private UnityEvent _levelComplete;
 
     private int _currentValue;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Car>(out Car car))
+        if (other.TryGetComponent(out Car car))
         {
             _currentValue++;
 
             if (_currentValue == _value)
             {
+                _levelComplete?.Invoke();
                 _audioSource.PlayOneShot(_winSoundFirst);
                 _audioSource.PlayOneShot(_winSoundSecond);
                 _winPanel.SetActive(true);

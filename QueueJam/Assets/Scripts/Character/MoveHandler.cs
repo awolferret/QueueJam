@@ -16,7 +16,6 @@ public class MoveHandler : MonoBehaviour
     private float _moveTime = 0.5f;
     private bool _isMoving = false;
     private Coroutine _coroutine;
-    private Vector3 _currentDirection;
 
     public List<GameObject> Tails => _tails;
 
@@ -26,18 +25,22 @@ public class MoveHandler : MonoBehaviour
         _emotionHandler.ShowAngryEmotion();
     }
 
-    private void CantMoveEffect(RaycastHit hit, Vector3 direction)
+    private void CantMoveEffect(RaycastHit hit, Vector3 direction,float distance)
     {
         Pushed();
 
-        if (hit.collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
+        if (distance <= 1)
         {
-            obstacle.PlayEffect(direction);
+            if (hit.collider.TryGetComponent(out Obstacle obstacle))
+            {
+                obstacle.PlayEffect(direction);
+            }
+            if (hit.collider.TryGetComponent(out MoveHandler moveHandler))
+            {
+                _coroutine = StartCoroutine(PushSomeone(moveHandler));
+            }
         }
-        if (hit.collider.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
-        {
-            _coroutine = StartCoroutine(PushSomeone(moveHandler,hit,direction));
-        }
+
     }
 
     private void OnEnable()
@@ -57,18 +60,18 @@ public class MoveHandler : MonoBehaviour
         float minimalDistance = 1f;
         Quaternion quaternion;
         Ray ray = new Ray(transform.position, direction);
-        RaycastHit hit;
-        Physics.Raycast(ray, out hit);
-        Vector3 lookDirection = hit.point - transform.position;
-        Vector3 destination = hit.point - ((direction / half)/half);
+        RaycastHit targetHit;
+        Physics.Raycast(ray, out targetHit);
+        Vector3 lookDirection = targetHit.point - transform.position;
+        Vector3 destination = targetHit.point - ((direction / half)/half);
         quaternion = Quaternion.LookRotation(lookDirection, Vector3.up);
-        float distance = Vector3.Distance(transform.position,hit.point);
+        float distance = Vector3.Distance(transform.position,targetHit.point);
 
         if (_isMoving == false && distance > minimalDistance)
         {
             if (direction == transform.forward || direction == -transform.forward)
             {
-                Move(destination, hit, direction);
+                Move(destination, targetHit, direction, distance);
 
                 transform.rotation = quaternion;
 
@@ -81,23 +84,23 @@ public class MoveHandler : MonoBehaviour
             }
             else
             {
-                CantMoveEffect(hit,direction);
+                CantMoveEffect(targetHit,direction, distance);
             }
             
         }
         else
         {
-            CantMoveEffect(hit, direction);
+            CantMoveEffect(targetHit, direction, distance);
         }
     }
 
-    private void Move(Vector3 destination,RaycastHit hit,Vector3 direction)
+    private void Move(Vector3 destination,RaycastHit hit,Vector3 direction,float distance)
     {
         _isMoving = true;
         _animationHandler.PlayRunningAnimation();
         _particlesHandler.StartParticles();
         transform.DOMove(destination, _moveTime).SetEase(Ease.Linear);
-        _coroutine = StartCoroutine(OffMovingEffects(direction,hit));
+        _coroutine = StartCoroutine(OffMovingEffects(direction,hit, distance));
 
         if (hit.collider.TryGetComponent<Border>(out Border border))
         {
@@ -106,7 +109,7 @@ public class MoveHandler : MonoBehaviour
         }
     }
 
-    private IEnumerator PushSomeone(MoveHandler moveHandler,RaycastHit hit,Vector3 direction)
+    private IEnumerator PushSomeone(MoveHandler moveHandler)
     {
         float minWait = 0.05f;
         float maxWait = 0.2f;
@@ -116,14 +119,14 @@ public class MoveHandler : MonoBehaviour
         moveHandler.Pushed();
     }
 
-    private IEnumerator OffMovingEffects(Vector3 direction, RaycastHit hit)
+    private IEnumerator OffMovingEffects(Vector3 direction, RaycastHit hit,float distance)
     {
         float waitTime = 0.5f;
         var wait = new WaitForSeconds(waitTime);
         yield return wait;
         _animationHandler.PlayIdleAnimation();
         _particlesHandler.StopParticles();
-        CantMoveEffect(hit, direction);
+        CantMoveEffect(hit, direction, distance);
         _isMoving = false;
     }
 }

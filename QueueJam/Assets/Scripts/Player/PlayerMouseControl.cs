@@ -15,7 +15,6 @@ public class PlayerMouseControl : MonoBehaviour
     {
         _playerInputs = new PlayerInputs();
         _playerInputs.Player.Select.performed += context => Selected();
-        //_playerInputs.Player.Select.canceled += context => Canceled();
     }
 
     private void OnEnable()
@@ -57,7 +56,9 @@ public class PlayerMouseControl : MonoBehaviour
 
     private IEnumerator Cancel()
     {
-        yield return new WaitForSeconds(0.15f);
+        float time = 0.15f;
+        var waitType = new WaitForSeconds(time);
+        yield return waitType;
         Canceled();
     }
 }

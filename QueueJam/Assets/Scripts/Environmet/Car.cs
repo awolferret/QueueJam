@@ -7,11 +7,13 @@ public class Car : MonoBehaviour
     [SerializeField] private CarSoundSystem _carSound;
 
     private float _moveTime = 2f;
+    private float _lookIndex = 0.01f;
     private Coroutine _coroutine;
 
     public void MoveToExit(Vector3[] waypoints)
     {
-        Tween tween = transform.DOPath(waypoints, _moveTime, PathType.Linear).SetLookAt(0.01f).SetEase(Ease.Linear);
+
+        Tween tween = transform.DOPath(waypoints, _moveTime, PathType.Linear).SetLookAt(_lookIndex).SetEase(Ease.Linear);
     }
 
     private void Start()

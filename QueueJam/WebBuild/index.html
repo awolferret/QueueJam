@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | QueueJam</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+    <!-- Yandex Games SDK -->
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+
+
+    <!-- Запуск рекламы при старте игры -->
+    <script type="text/javascript">
+        var player;
+        var sdk;
+        var payments = null;
+
+
+        YaGames.init({
+            adv: {
+                onAdvClose: wasShown => {
+                    console.info('adv closed!');
+                }
+            }
+        })
+            .then(ysdk => {
+                sdk = ysdk;
+                sdk.adv.showFullscreenAdv({ callbacks: {} });
+    </script>
+
+    <!-- Обработка рекламы в нужное время -->
+    <script>
+        function showFullscrenAd() {
+            sdk.adv.showFullscreenAdv({
+                callbacks: {
+                    onClose: function (wasShown) {
+                        unityInstance.SendMessage('YandexSDK', 'OnInterstitialShown');
+                    },
+                    onError: function (error) {
+                        unityInstance.SendMessage('YandexSDK', 'OnInterstitialFailed', error);
+                    }
+                }
+            })
+        }
+    </script>
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
@@ -29,9 +67,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/eb9c2d41470ad1254434ab298c4cf1ce.js";
       var config = {
-        dataUrl: buildUrl + "/3af57a3b50981659c56061e43d458bdd.data.unityweb",
-        frameworkUrl: buildUrl + "/993a3ac5aa270773f69c853295064b26.js.unityweb",
-        codeUrl: buildUrl + "/572bedcb6bff026a8a941b99fd03001c.wasm.unityweb",
+        dataUrl: buildUrl + "/58baaec8879fab06e320045530b48dcc.data.unityweb",
+        frameworkUrl: buildUrl + "/7004fcf11d7516f5ea627c74867d0e8c.js.unityweb",
+        codeUrl: buildUrl + "/8c19991910d32c9e7cffd6904fa90206.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "QueueJam",
@@ -53,8 +91,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
       loadingBar.style.display = "block";
 

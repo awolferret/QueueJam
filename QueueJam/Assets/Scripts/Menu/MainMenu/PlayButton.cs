@@ -5,16 +5,15 @@ public class PlayButton : MonoBehaviour
 {
     private int _levelToLoad;
     private const string _level = "Level";
-    private int _one = 1;
-    private int _two = 2;
+    private int _firstLevelIndex = 1;
 
     public void LoadLevel()
     {
         _levelToLoad = PlayerPrefs.GetInt(_level);
 
-        if (_levelToLoad == _one || _levelToLoad == 0)
+        if (_levelToLoad == 0)
         {
-            _levelToLoad = _two;
+            _levelToLoad = _firstLevelIndex;
         }
 
         SceneManager.LoadScene(_levelToLoad);

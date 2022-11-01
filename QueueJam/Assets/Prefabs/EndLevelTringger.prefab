@@ -115,6 +115,21 @@ MonoBehaviour:
   _winSoundSecond: {fileID: 8300000, guid: 921df60c27bf7ac4da23187a7694c91c, type: 3}
   _audioSource: {fileID: 0}
   _saveLevel: {fileID: 0}
+  _levelComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7965569028918158580, guid: af9a37f9e614b3141879c8c57c7c7c3b, type: 3}
+        m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
+        m_MethodName: ShowInterstitial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &3298718093545875779
 Rigidbody:
   m_ObjectHideFlags: 0

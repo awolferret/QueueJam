@@ -6,8 +6,8 @@ public class FontController : MonoBehaviour
     [SerializeField] private TMP_Text _text;
 
     private float _screenHeight;
+    private float _twoHundredSixtyFive = 265;
     private float _threeHundredFifty = 350;
-    private float _threeHundredSixty = 360;
     private float _hourHundredSixty = 460;
     private float _sixHundred = 600;
     private float _sixHundredSeventyFive = 675;
@@ -29,7 +29,7 @@ public class FontController : MonoBehaviour
         }
         if (_screenHeight <= _eightHundred && _screenHeight >= _sevenHundred)
         {
-            _text.fontSize = _threeHundredSixty;
+            _text.fontSize = _twoHundredSixtyFive;
         }
         if (_screenHeight <= _nineHundred && _screenHeight >= _eightHundred)
         {
