@@ -47,11 +47,7 @@ public class PlayerMouseDetection : MonoBehaviour
     private void Awake()
     {
         _playerInput = new PlayerInputs();
-        _playerInput.Enable();
-    }
-
-    private void Start()
-    {
         _mainCamera = Camera.main;
+        _playerInput.Enable();
     }
 }

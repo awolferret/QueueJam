@@ -8,7 +8,7 @@ public class CharacterAnimationHandler : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     private Coroutine _coroutine;
-    private bool _selected = false;
+    private bool _isSelected = false;
 
     public void PlayRunningAnimation()
     {
@@ -27,15 +27,15 @@ public class CharacterAnimationHandler : MonoBehaviour
 
     public void PlaySelectedAnimation()
     {
-        _selected = true;
+        _isSelected = true;
         _animator.Play(CharacterAnimation.Selected);
         _coroutine = StartCoroutine(SelectedCoroutine());
     }
 
     public void Deselect()
     {
-        _selected = false;
-        PlayIdleAnimation();
+        _isSelected = false;
+        //PlayIdleAnimation();
     }
 
     private IEnumerator SelectedCoroutine()
@@ -43,7 +43,7 @@ public class CharacterAnimationHandler : MonoBehaviour
         float time = 1f;
         var waitType = new WaitForSeconds(time);
 
-        while (_selected == true)
+        while (_isSelected == true)
         {
             yield return waitType;
         }
