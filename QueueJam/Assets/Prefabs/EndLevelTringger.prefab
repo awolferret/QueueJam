@@ -113,7 +113,7 @@ MonoBehaviour:
   _winPanel: {fileID: 1231435788525407563, guid: cb2bd136b7fbf934e8f86f3a38b274df, type: 3}
   _winSoundFirst: {fileID: 8300000, guid: 0a165517a0291f847a3683342d6421cd, type: 3}
   _winSoundSecond: {fileID: 8300000, guid: 921df60c27bf7ac4da23187a7694c91c, type: 3}
-  _audioSource: {fileID: 0}
+  _audioSource: {fileID: 8505741572463898273, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
   _saveLevel: {fileID: 0}
   _levelComplete:
     m_PersistentCalls:

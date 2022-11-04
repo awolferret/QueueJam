@@ -15,6 +15,7 @@ public class PlayerMouseControl : MonoBehaviour
     {
         _playerInputs = new PlayerInputs();
         _playerInputs.Player.Select.performed += context => Selected();
+        _playerInputs.Player.Select.canceled += context => Canceled();
     }
 
     private void OnEnable()
@@ -41,7 +42,7 @@ public class PlayerMouseControl : MonoBehaviour
             }
         }
 
-        _coroutine = StartCoroutine(Cancel());
+        //_coroutine = StartCoroutine(Cancel());
     }
 
     private void Canceled()

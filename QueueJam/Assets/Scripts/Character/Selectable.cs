@@ -5,18 +5,21 @@ using UnityEngine;
 
 public class Selectable : MonoBehaviour
 {
+    [SerializeField] private CharacterAnimationHandler _characterAnimation;
+
     private MoveHandler _moveHandler;
     private Coroutine _coroutine;
 
     public void Selected()
     {
         _moveHandler.enabled = true;
-        _coroutine = StartCoroutine(OffMoveCoroutine());
+        _characterAnimation.PlaySelectedAnimation();
     }
 
     public void OffMove()
     {
         _moveHandler.enabled = false;
+        _characterAnimation.Deselect();
     }
 
     private void Start()
