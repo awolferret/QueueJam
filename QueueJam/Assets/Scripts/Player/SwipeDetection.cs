@@ -5,7 +5,7 @@ public class SwipeDetection : MonoBehaviour
     private Vector2 _mouseDownPoint;
     private Vector2 _mouseUpPoint;
     private Vector2 _delta;
-    private float _minimalDisatanse = 0.5f;
+    private float _minimalDisatanse = 0.3f;
     public static event OnSwipeInput SwipeInput;
     public delegate void OnSwipeInput(Vector3 direction);
 

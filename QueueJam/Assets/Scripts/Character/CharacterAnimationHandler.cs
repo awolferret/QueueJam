@@ -35,7 +35,7 @@ public class CharacterAnimationHandler : MonoBehaviour
     public void Deselect()
     {
         _isSelected = false;
-        //PlayIdleAnimation();
+        _coroutine = StartCoroutine(OffSelectedAnimation());
     }
 
     private IEnumerator SelectedCoroutine()
@@ -47,6 +47,14 @@ public class CharacterAnimationHandler : MonoBehaviour
         {
             yield return waitType;
         }
+    }
+
+    private IEnumerator OffSelectedAnimation()
+    {
+        float time = 1f;
+        var waitType = new WaitForSeconds(time);
+        yield return waitType;
+        PlayIdleAnimation();
     }
 }
 

@@ -42,7 +42,6 @@ public class PlayerMouseControl : MonoBehaviour
             }
         }
 
-        //_coroutine = StartCoroutine(Cancel());
     }
 
     private void Canceled()
@@ -53,13 +52,5 @@ public class PlayerMouseControl : MonoBehaviour
             _currentSelectable.OffMove();
             _currentSelectable = null;
         }
-    }
-
-    private IEnumerator Cancel()
-    {
-        float time = 0.15f;
-        var waitType = new WaitForSeconds(time);
-        yield return waitType;
-        Canceled();
     }
 }

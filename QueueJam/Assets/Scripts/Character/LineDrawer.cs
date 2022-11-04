@@ -5,7 +5,6 @@ public class LineDrawer : MonoBehaviour
 {
     [SerializeField] private GameObject _arrow;
 
-    private float _minimalDistance = 1f;
     private bool _isDrawing = false;
     private Coroutine _coroutine;
     private Camera _mainCamera;
@@ -13,7 +12,6 @@ public class LineDrawer : MonoBehaviour
     private RaycastHit _hit;
     private Vector3 _startPosition;
     private Vector3 _endPosition;
-    private Vector2 _delta;
 
     public void StartDrawLine()
     {
@@ -23,26 +21,37 @@ public class LineDrawer : MonoBehaviour
 
     public void StopDrawLine()
     {
-        _arrow.transform.localScale = new Vector3(0.6f, 0, 0);
+        float width = 0.6f;
+        _arrow.transform.localScale = new Vector3(width, 0, 0);
         _isDrawing = false;
     }
 
     private void Update()
     {
+        float one = 1;
+        float width = 0.6f;
+        float divider = 5;
+
         if (_isDrawing == true)
         {
             _endPosition = GetMousePosition();
-            Vector2 startPoint = new Vector2(_startPosition.x, _startPosition.z);
             Vector2 endPoint = new Vector2(_endPosition.x, _endPosition.z);
-            _delta = endPoint - startPoint;
 
-            if (transform.forward == new Vector3(0, 0, 1) || transform.forward == new Vector3(0, 0, -1))
+            if (transform.forward == new Vector3(0, 0, one))
             {
-                _arrow.transform.localScale = new Vector3(0.6f, -endPoint.y / 5, 0);
+                _arrow.transform.localScale = new Vector3(width, -endPoint.y / divider, 0);
+            }
+            else if (transform.forward == new Vector3(0, 0, -one))
+            {
+                _arrow.transform.localScale = new Vector3(width, endPoint.y / divider, 0);
+            }
+            else if (transform.forward == new Vector3(one, 0, 0))
+            {
+                _arrow.transform.localScale = new Vector3(width, -endPoint.x / divider, 0);
             }
             else
             {
-                _arrow.transform.localScale = new Vector3(0.6f, -endPoint.x / 5, 0);
+                _arrow.transform.localScale = new Vector3(width, endPoint.x / divider, 0);
             }
         }
     }

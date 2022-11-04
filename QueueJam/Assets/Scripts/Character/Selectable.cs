@@ -30,12 +30,4 @@ public class Selectable : MonoBehaviour
     {
         _moveHandler = GetComponent<MoveHandler>();
     }
-
-    private IEnumerator OffMoveCoroutine()
-    {
-        float waitTime = 0.25f;
-        var waitType = new WaitForSeconds(waitTime);
-        yield return waitType;
-        OffMove();
-    }
 }
