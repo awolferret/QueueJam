@@ -36,23 +36,29 @@ public class LineDrawer : MonoBehaviour
         {
             _endPosition = GetMousePosition();
             Vector2 endPoint = new Vector2(_endPosition.x, _endPosition.z);
-            Debug.Log($"x{endPoint.x},y{endPoint.y}");
+            Vector2 startPoint = new Vector2(_startPosition.x, _startPosition.z);
+            Vector2 delta = Vector2.zero;
+            delta = endPoint - startPoint;
+            //float axis = Mathf.Atan2(endPoint.x, endPoint.y) * Mathf.Rad2Deg;
+            float axis = Vector2.Angle(transform.position, endPoint);
+            Debug.Log(axis);
+            //Debug.Log(delta.magnitude);
 
             if (transform.forward == new Vector3(0, 0, one))
             {
-                _arrow.transform.localScale = new Vector3(width, -endPoint.y / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.magnitude/divider /*-endPoint.y / divider*/, 0);
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
-                _arrow.transform.localScale = new Vector3(width, endPoint.y / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.magnitude/divider /* endPoint.y / divider*/, 0);
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, -endPoint.x / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.magnitude / divider/*-endPoint.x / divider*/, 0);
             }
             else if (transform.forward == new Vector3(-one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, endPoint.x / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.magnitude / divider/*endPoint.x / divider*/, 0);
             }
         }
     }
