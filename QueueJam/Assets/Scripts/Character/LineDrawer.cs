@@ -36,43 +36,23 @@ public class LineDrawer : MonoBehaviour
         {
             _endPosition = GetMousePosition();
             Vector2 endPoint = new Vector2(_endPosition.x, _endPosition.z);
+            Debug.Log($"x{endPoint.x},y{endPoint.y}");
 
             if (transform.forward == new Vector3(0, 0, one))
             {
                 _arrow.transform.localScale = new Vector3(width, -endPoint.y / divider, 0);
-
-                if (endPoint.y > 1.5f)
-                {
-                    _arrow.transform.localScale = new Vector3(width, -1.5f, 0);
-                }
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
                 _arrow.transform.localScale = new Vector3(width, endPoint.y / divider, 0);
-
-                if (endPoint.y > 1.5f)
-                {
-                    _arrow.transform.localScale = new Vector3(width, 1.5f, 0);
-                }
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
                 _arrow.transform.localScale = new Vector3(width, -endPoint.x / divider, 0);
-
-                if (endPoint.x > 1.5f)
-                {
-                    _arrow.transform.localScale = new Vector3(width, -1.5f, 0);
-                }
             }
-            else
+            else if (transform.forward == new Vector3(-one, 0, 0))
             {
                 _arrow.transform.localScale = new Vector3(width, endPoint.x / divider, 0);
-
-                if (endPoint.x > 1.5f)
-                {
-                    _arrow.transform.localScale = new Vector3(width, 1.5f, 0);
-                }
-
             }
         }
     }

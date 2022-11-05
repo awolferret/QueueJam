@@ -14,7 +14,7 @@ public class Selectable : MonoBehaviour
     public void Selected()
     {
         _moveHandler.enabled = true;
-        Debug.Log($"fwd{transform.forward}");
+        //Debug.Log($"fwd{transform.forward}");
         _characterAnimation.PlaySelectedAnimation();
         _lineDrawer.StartDrawLine();
     }
