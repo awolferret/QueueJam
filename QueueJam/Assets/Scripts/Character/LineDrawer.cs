@@ -39,27 +39,22 @@ public class LineDrawer : MonoBehaviour
             Vector2 startPoint = new Vector2(_startPosition.x, _startPosition.z);
             Vector2 delta = Vector2.zero;
             delta = endPoint - startPoint;
-            //float axis = Mathf.Atan2(endPoint.x, endPoint.y) * Mathf.Rad2Deg;
-            //float axis = Vector2.Angle(endPoint, transform.forward);
-            //Debug.Log(axis);
-            //Debug.Log(delta);
-            //Debug.Log(delta.magnitude);
 
             if (transform.forward == new Vector3(0, 0, one))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.y/divider /*-endPoint.y / divider*/, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.y/divider, 0);
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.y/divider /* endPoint.y / divider*/, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.y/divider, 0);
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.x / divider/*-endPoint.x / divider*/, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.x / divider, 0);
             }
             else if (transform.forward == new Vector3(-one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.x / divider/*endPoint.x / divider*/, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.x / divider, 0);
             }
         }
     }
