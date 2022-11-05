@@ -40,18 +40,39 @@ public class LineDrawer : MonoBehaviour
             if (transform.forward == new Vector3(0, 0, one))
             {
                 _arrow.transform.localScale = new Vector3(width, -endPoint.y / divider, 0);
+
+                if (endPoint.y > 1.5f)
+                {
+                    _arrow.transform.localScale = new Vector3(width, -1.5f, 0);
+                }
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
                 _arrow.transform.localScale = new Vector3(width, endPoint.y / divider, 0);
+
+                if (endPoint.y > 1.5f)
+                {
+                    _arrow.transform.localScale = new Vector3(width, 1.5f, 0);
+                }
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
                 _arrow.transform.localScale = new Vector3(width, -endPoint.x / divider, 0);
+
+                if (endPoint.x > 1.5f)
+                {
+                    _arrow.transform.localScale = new Vector3(width, -1.5f, 0);
+                }
             }
             else
             {
                 _arrow.transform.localScale = new Vector3(width, endPoint.x / divider, 0);
+
+                if (endPoint.x > 1.5f)
+                {
+                    _arrow.transform.localScale = new Vector3(width, 1.5f, 0);
+                }
+
             }
         }
     }
