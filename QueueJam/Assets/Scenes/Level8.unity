@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 2133277457842990839, guid: 2afad5832c2bec841a25b31ced9054dd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f1db4f70148bcf41b9d0effeab49be4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afad5832c2bec841a25b31ced9054dd, type: 3}
 --- !u!1001 &62789691
@@ -2070,6 +2074,6 @@ PrefabInstance:
     - target: {fileID: 5695967870748722840, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 9d823727a38d648978b27af5e116b43a, type: 2}
+      objectReference: {fileID: 2100000, guid: 08d0adb1379a2d34d965430952e769f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}

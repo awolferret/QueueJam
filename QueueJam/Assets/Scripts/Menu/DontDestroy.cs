@@ -9,5 +9,10 @@ public class DontDestroy : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(_SoundSystem);
+
+        if (FindObjectOfType<DontDestroy>() != this)
+        {
+            Destroy(gameObject);
+        }
     }
 }
