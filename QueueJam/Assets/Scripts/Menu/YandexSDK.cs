@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class YandexSDK : MonoBehaviour
 {
-    private UnityEvent _onRewardViewed = new UnityEvent();
+    //private UnityEvent _onRewardViewed = new UnityEvent();
 
-    public event UnityAction OnRewardViewed
-    {
-        add => _onRewardViewed.AddListener(value);
-        remove => _onRewardViewed.RemoveListener(value);
-    }
+    //public event UnityAction OnRewardViewed
+    //{
+    //    add => _onRewardViewed.AddListener(value);
+    //    remove => _onRewardViewed.RemoveListener(value);
+    //}
 
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class YandexSDK : MonoBehaviour
 
     public void ShowRewardAd()
     {
-        VideoAd.Show(onRewardedCallback: _onRewardViewed.Invoke);
+        VideoAd.Show();//onRewardedCallback: _onRewardViewed.Invoke);
     }
 
     private void ShowBannerAd()

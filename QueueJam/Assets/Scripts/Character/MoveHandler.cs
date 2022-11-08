@@ -14,6 +14,7 @@ public class MoveHandler : MonoBehaviour
     [SerializeField] private EmotionHandler _emotionHandler;
 
     private float _moveTime = 0.5f;
+    private float _distance = 1f;
     private bool _isMoving = false;
     private Coroutine _coroutine;
 
@@ -25,11 +26,15 @@ public class MoveHandler : MonoBehaviour
         _emotionHandler.ShowAngryEmotion();
     }
 
-    private void CantMoveEffect(RaycastHit hit, Vector3 direction,float distance)
+    private void CantMoveEffect(Vector3 direction)
     {
         Pushed();
+        Ray ray = new Ray(transform.position, direction);
+        RaycastHit hit;
+        Physics.Raycast(ray, out hit);
+        float distance = Vector3.Distance(transform.position, hit.point);
 
-        if (distance <= 1)
+        if (distance <= _distance)
         {
             if (hit.collider.TryGetComponent(out Obstacle obstacle))
             {
@@ -40,7 +45,6 @@ public class MoveHandler : MonoBehaviour
                 _coroutine = StartCoroutine(PushSomeone(moveHandler));
             }
         }
-
     }
 
     private void OnEnable()
@@ -72,7 +76,6 @@ public class MoveHandler : MonoBehaviour
             if (direction == transform.forward || direction == -transform.forward)
             {
                 Move(destination, targetHit, direction, distance);
-
                 transform.rotation = quaternion;
 
                 for (int i = 0; i < _tails.Count; i++)
@@ -84,13 +87,12 @@ public class MoveHandler : MonoBehaviour
             }
             else
             {
-                CantMoveEffect(targetHit,direction, distance);
+                CantMoveEffect(direction);
             }
-            
         }
         else
         {
-            CantMoveEffect(targetHit, direction, distance);
+            CantMoveEffect(direction);
         }
     }
 
@@ -100,7 +102,7 @@ public class MoveHandler : MonoBehaviour
         _animationHandler.PlayRunningAnimation();
         _particlesHandler.StartParticles();
         transform.DOMove(destination, _moveTime).SetEase(Ease.Linear);
-        _coroutine = StartCoroutine(OffMovingEffects(direction,hit, distance));
+        _coroutine = StartCoroutine(OffMovingEffects(direction));
 
         if (hit.collider.TryGetComponent<Border>(out Border border))
         {
@@ -119,14 +121,14 @@ public class MoveHandler : MonoBehaviour
         moveHandler.Pushed();
     }
 
-    private IEnumerator OffMovingEffects(Vector3 direction, RaycastHit hit,float distance)
+    private IEnumerator OffMovingEffects(Vector3 direction)
     {
         float waitTime = 0.5f;
         var wait = new WaitForSeconds(waitTime);
         yield return wait;
         _animationHandler.PlayIdleAnimation();
         _particlesHandler.StopParticles();
-        CantMoveEffect(hit, direction, distance);
+        CantMoveEffect(direction);
         _isMoving = false;
     }
 }
