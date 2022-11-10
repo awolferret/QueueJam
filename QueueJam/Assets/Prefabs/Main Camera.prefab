@@ -2325,7 +2325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3009467301546162151, guid: ab4b852d727faa544abd34275dcfed4b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -275
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 3009467301546162151, guid: ab4b852d727faa544abd34275dcfed4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2388,6 +2388,10 @@ PrefabInstance:
     - target: {fileID: 6348687165525606645, guid: c6297c37050b64d48bd044a7da88fc50, type: 3}
       propertyPath: m_Name
       value: LeaderboardButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348687165525606645, guid: c6297c37050b64d48bd044a7da88fc50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6417184997171319310, guid: c6297c37050b64d48bd044a7da88fc50, type: 3}
       propertyPath: m_Sprite
@@ -2463,7 +2467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6505903276054490031, guid: c6297c37050b64d48bd044a7da88fc50, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: -275
       objectReference: {fileID: 0}
     - target: {fileID: 6505903276054490031, guid: c6297c37050b64d48bd044a7da88fc50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
