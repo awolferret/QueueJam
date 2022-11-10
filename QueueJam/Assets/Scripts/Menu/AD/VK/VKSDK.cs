@@ -1,10 +1,11 @@
 using UnityEngine;
 using Agava.VKGames;
-using UnityEngine.UI;
 using System.Collections;
 
 public class VKSDK : MonoBehaviour
 {
+    private const string _level = "Level";
+
 #if VK_GAMES
     private void Awake()
     {
@@ -33,5 +34,9 @@ public class VKSDK : MonoBehaviour
         SocialInteraction.InviteFriends();
     }
 
-
+    public void ShowLeaderboard()
+    {
+        int one = 1;
+        Leaderboard.ShowLeaderboard(PlayerPrefs.GetInt(_level) - one);
+    }
 }

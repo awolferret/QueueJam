@@ -6,7 +6,7 @@ using UnityEngine;
 public class YandexSDK : MonoBehaviour
 {
 
-#if YANDEX_GAMES
+#if YANDEX_GAMES 
     private void Awake()
     {
         YandexGamesSdk.CallbackLogging = true;
@@ -15,7 +15,7 @@ public class YandexSDK : MonoBehaviour
 #endif
     private IEnumerator Start()
     {
-#if !UNITY_WEBGL || UNITY_EDITOR || !VK_GAMES
+#if !UNITY_WEBGL || UNITY_EDITOR 
         yield break;
 #endif
 

@@ -54,7 +54,7 @@ namespace Agava.VKGames.Samples
 
         public void ShowLeaderboardButton()
         {
-            Leaderboard.ShowLeaderboard(100);
+            Leaderboard.ShowLeaderboard();
         }
     }
 }
