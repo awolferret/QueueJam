@@ -553,6 +553,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4683620686295989993, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974766117480445545, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8505741572463898280, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -600,6 +608,14 @@ PrefabInstance:
     - target: {fileID: 8505741572463898285, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8505741573663209875, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8505741573663209875, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
