@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2242914562426874788}
   - component: {fileID: 2242914562426874795}
   - component: {fileID: 2242914562426874792}
+  - component: {fileID: 8758046770025139521}
   m_Layer: 3
   m_Name: Wall
   m_TagString: Untagged
@@ -109,14 +110,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b1e45e578d7274aa79c3538ea1c5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _exitPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _carPrefab: {fileID: 8398103739495003488, guid: f394647862c90e644aaa47c50d3b861f, type: 3}
+  _waypoints: []
+  _carPrefabs:
+  - {fileID: 1290454565194650, guid: 83b22c1c7009d674989b4b363cfb4bce, type: 3}
+  - {fileID: 1477293461077286, guid: 6786d61d19e0d1a46a6e2c710fd480b5, type: 3}
+  - {fileID: 1846421223310490, guid: 649b11d5b9749054f8c98071eb8b7092, type: 3}
+  - {fileID: 1356091544070920, guid: f4197335c4487e143a4c408b5e123f49, type: 3}
+  - {fileID: 1586926603202286, guid: ba9e716894432d84abb1abcf8e3d2779, type: 3}
+  - {fileID: 1908306620942388, guid: 8208d306083529044a4685784672dff5, type: 3}
+  - {fileID: 1873148799461644, guid: c844bb83f65e7204ba1b7261966da076, type: 3}
+  - {fileID: 1145411353641818, guid: e3eede387629a0441b9709e2b5c3fc0f, type: 3}
+  - {fileID: 1789471282961980, guid: 1654b17d23f689340a47ce6c90304cb8, type: 3}
+  - {fileID: 8398103739495003488, guid: f394647862c90e644aaa47c50d3b861f, type: 3}
   _carAppearanceEffect: {fileID: 896101523342851817, guid: f7a150cde892d90478222a9045d4b3ac, type: 3}
-  _hidingPoint: {fileID: 0}
-  _GetInCarEffect: {fileID: 1760741567964479430, guid: 01796890cd4afc8459634f68c5b492be, type: 3}
 --- !u!54 &2242914562426874792
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -133,3 +139,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8758046770025139521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2242914562426874790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0e3c9bcbabc8343a58aafaf86d548a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _getInCarEffects:
+  - {fileID: 5626794573398614867, guid: 549f389077161ac4dbacfa5c5a55f203, type: 3}
+  - {fileID: 5626794573398614867, guid: e8d67c9cf49e4d742a9e299418c5bfce, type: 3}
+  - {fileID: 5626794573398614867, guid: b5d0008dd53832e449148048e5164c47, type: 3}
+  - {fileID: 5626794573398614867, guid: 549f389077161ac4dbacfa5c5a55f203, type: 3}
+  - {fileID: 5626794573398614867, guid: 549f389077161ac4dbacfa5c5a55f203, type: 3}

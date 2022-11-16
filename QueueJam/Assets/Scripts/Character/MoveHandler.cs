@@ -13,7 +13,7 @@ public class MoveHandler : MonoBehaviour
     [SerializeField] private CharacterParticlesHandler _particlesHandler;
     [SerializeField] private EmotionHandler _emotionHandler;
 
-    private float _moveTime = 0.5f;
+    private float _moveTime = 0.6f;
     private float _distance = 1f;
     private bool _isMoving = false;
     private Coroutine _coroutine;

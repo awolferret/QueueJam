@@ -28,7 +28,7 @@ public class LineDrawer : MonoBehaviour
     {
         float one = 1;
         float width = 0.6f;
-        float divider = 5;
+        float divider = 0.75f;
 
         if (_isDrawing == true)
         {
@@ -40,19 +40,19 @@ public class LineDrawer : MonoBehaviour
 
             if (transform.forward == new Vector3(0, 0, one))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.y/divider, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.y * divider, 0);
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.y/divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.y * divider, 0);
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.x / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.x * divider, 0);
             }
             else if (transform.forward == new Vector3(-one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.x / divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.x * divider, 0);
             }
         }
     }

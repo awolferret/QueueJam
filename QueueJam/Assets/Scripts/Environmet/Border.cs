@@ -5,7 +5,7 @@ using UnityEngine;
 public class Border : MonoBehaviour
 {
     [SerializeField] private Vector3[] _waypoints;
-    [SerializeField] private GameObject _carPrefab;
+    [SerializeField] private List<GameObject> _carPrefabs;
     [SerializeField] private GameObject _carAppearanceEffect;
 
     private Coroutine _coroutine;
@@ -25,7 +25,7 @@ public class Border : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.TryGetComponent<MoveHandler>(out MoveHandler moveHandler))
+        if (other.gameObject.TryGetComponent(out MoveHandler moveHandler))
         {
             _firstPoint = moveHandler.gameObject.transform;
             _handler = moveHandler;
@@ -40,7 +40,7 @@ public class Border : MonoBehaviour
         float animationTime = 0.5f;
         var animationWait = new WaitForSeconds(animationTime * _gameObjects.Count);
         var tailWait = new WaitForSeconds((delay / _handler.Tails.Count));
-        _handler.TryGetComponent<TailMover>(out TailMover tailMoverFirst);
+        _handler.TryGetComponent(out TailMover tailMoverFirst);
         _gameObjects.Add(_handler.gameObject);
         tailMoverFirst.Move(_firstPoint.position, speed);
 
@@ -66,7 +66,7 @@ public class Border : MonoBehaviour
         Vector3 carSpawnPosition = position + gap;
         GameObject effect = Instantiate(_carAppearanceEffect, position, Quaternion.identity);
         yield return effectWaitType;
-        GameObject car = Instantiate(_carPrefab, carSpawnPosition, Quaternion.identity);
+        GameObject car = Instantiate(_carPrefabs[Random.Range(0,_carPrefabs.Count)], carSpawnPosition, Quaternion.identity);
         car.transform.LookAt(_waypoints[0]);
         _coroutine = StartCoroutine(OffEffect(effect));
         yield return carWaitType;
@@ -75,7 +75,7 @@ public class Border : MonoBehaviour
 
     private void DriveToExit(GameObject gameObject)
     { 
-        gameObject.TryGetComponent<Car>(out Car car);
+        gameObject.TryGetComponent(out Car car);
         car.MoveToExit(_waypoints);
     }
 

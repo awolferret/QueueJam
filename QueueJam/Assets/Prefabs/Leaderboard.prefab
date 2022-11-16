@@ -147,7 +147,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 342.93, y: 400}
+  m_SizeDelta: {x: 550.36, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3371571943971621476
 CanvasRenderer:
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2665092531716549260}
   m_HandleRect: {fileID: 2407938122923846628}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -454,7 +454,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -6}
-  m_SizeDelta: {x: 73, y: 74}
+  m_SizeDelta: {x: 49, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2271832781538983988
 CanvasRenderer:
@@ -539,8 +539,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PanelHandler, Assembly-CSharp
-        m_MethodName: ClosePanel
+        m_TargetAssemblyTypeName: PauseHandler, Assembly-CSharp
+        m_MethodName: ClosePausePanel
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8178974716235210875}
@@ -888,6 +888,7 @@ GameObject:
   - component: {fileID: 2505330545392432682}
   - component: {fileID: 8995578584893587619}
   - component: {fileID: 27678108226852130}
+  - component: {fileID: 3678493665339577058}
   m_Layer: 5
   m_Name: Leaderboard
   m_TagString: Untagged
@@ -914,7 +915,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 369.5, y: 500}
+  m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8995578584893587619
 CanvasRenderer:
@@ -954,6 +955,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3678493665339577058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8178974716235210875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf13ceaa562f50f4c832ec461c1b9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerCards:
+  - {fileID: 7721228119272207451}
+  - {fileID: 895702143856523554}
+  - {fileID: 4264026082707324067}
+  - {fileID: 8890775374675897191}
+  - {fileID: 4460913259761097741}
+  - {fileID: 4886061787026092498}
+  - {fileID: 4181946830851947974}
+  - {fileID: 7792669327507729431}
+  - {fileID: 7965819096035057209}
+  - {fileID: 6378843649278423895}
 --- !u!1001 &521853454508660259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,6 +985,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -991,7 +1019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1045,12 +1073,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+--- !u!1 &8890775374675897191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 521853454508660259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5893347389934908066 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
@@ -1063,6 +1100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1093,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1147,12 +1188,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+--- !u!1 &7792669327507729431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 1187402867518624083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5084034376757245394 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
@@ -1165,6 +1215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1195,7 +1249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1249,12 +1303,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+--- !u!1 &7965819096035057209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 1356667236829700989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4910972397896730620 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
@@ -1267,6 +1330,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1297,7 +1368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1351,6 +1422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard
@@ -1362,6 +1437,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 1691330334528784671}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7721228119272207451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 1691330334528784671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2655341927157419539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1369,6 +1449,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1399,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1453,12 +1537,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+--- !u!1 &6378843649278423895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 2655341927157419539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8227291071200914066 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
@@ -1471,6 +1564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1501,7 +1598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1555,6 +1652,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (5)
@@ -1566,6 +1667,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 4580539759219739798}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4886061787026092498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 4580539759219739798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4735472418300600649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1573,6 +1679,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1603,7 +1713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1657,6 +1767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (4)
@@ -1668,6 +1782,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 4735472418300600649}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4460913259761097741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 4735472418300600649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5068482071246422146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1675,6 +1794,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1705,7 +1828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1759,6 +1882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (6)
@@ -1770,6 +1897,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 5068482071246422146}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4181946830851947974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 5068482071246422146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5148532241903731175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1777,6 +1909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1807,7 +1943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1861,6 +1997,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (2)
@@ -1872,6 +2012,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 5148532241903731175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4264026082707324067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 5148532241903731175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8084440374745744486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1879,6 +2024,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2931491041868602555}
     m_Modifications:
+    - target: {fileID: 2011153046311115039, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_fontSize
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1909,7 +2058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 337.27
+      value: 530.4
       objectReference: {fileID: 0}
     - target: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1963,6 +2112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7691481886166132804, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
       propertyPath: m_Name
       value: PlayerCard (1)
@@ -1972,5 +2125,10 @@ PrefabInstance:
 --- !u!224 &2793689144508604647 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6265807570519663745, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
+  m_PrefabInstance: {fileID: 8084440374745744486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &895702143856523554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962057613639712068, guid: 3537a7fc556d5164299327da26a670a9, type: 3}
   m_PrefabInstance: {fileID: 8084440374745744486}
   m_PrefabAsset: {fileID: 0}
