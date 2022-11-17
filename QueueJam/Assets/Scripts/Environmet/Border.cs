@@ -7,6 +7,7 @@ public class Border : MonoBehaviour
     [SerializeField] private Vector3[] _waypoints;
     [SerializeField] private List<GameObject> _carPrefabs;
     [SerializeField] private GameObject _carAppearanceEffect;
+    [SerializeField] private GetInCarEffectsHandler _effectsHandler;
 
     private Coroutine _coroutine;
     private MoveHandler _handler;
@@ -67,6 +68,7 @@ public class Border : MonoBehaviour
         GameObject effect = Instantiate(_carAppearanceEffect, position, Quaternion.identity);
         yield return effectWaitType;
         GameObject car = Instantiate(_carPrefabs[Random.Range(0,_carPrefabs.Count)], carSpawnPosition, Quaternion.identity);
+        _effectsHandler.SetCar(car);
         car.transform.LookAt(_waypoints[0]);
         _coroutine = StartCoroutine(OffEffect(effect));
         yield return carWaitType;

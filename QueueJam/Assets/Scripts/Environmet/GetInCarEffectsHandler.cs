@@ -44,6 +44,7 @@ public class GetInCarEffectsHandler : MonoBehaviour
                 if (index >= _gameObjects.Count)
                 {
                     _coroutine = StartCoroutine(ShowGetInCarEffect(_gameObjects.Count,other.transform));
+                    _animationHandler.PlayEffect(_gameObjects.Count);
                     index = minusOne;
                     _gameObjects.Clear();
                 }
@@ -60,4 +61,5 @@ public class GetInCarEffectsHandler : MonoBehaviour
         yield return waitType;
         activeEffect.SetActive(false);
     }
+
 }

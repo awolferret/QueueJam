@@ -125,6 +125,7 @@ MonoBehaviour:
   - {fileID: 1789471282961980, guid: 1654b17d23f689340a47ce6c90304cb8, type: 3}
   - {fileID: 8398103739495003488, guid: f394647862c90e644aaa47c50d3b861f, type: 3}
   _carAppearanceEffect: {fileID: 896101523342851817, guid: f7a150cde892d90478222a9045d4b3ac, type: 3}
+  _effectsHandler: {fileID: 8758046770025139521}
 --- !u!54 &2242914562426874792
 Rigidbody:
   m_ObjectHideFlags: 0

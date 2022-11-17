@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LookAtCamer : MonoBehaviour
+public class LookAtCamera : MonoBehaviour
 {
     [SerializeField] private Transform _camera;
 

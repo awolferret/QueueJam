@@ -12,7 +12,6 @@ public class Car : MonoBehaviour
 
     public void MoveToExit(Vector3[] waypoints)
     {
-
         Tween tween = transform.DOPath(waypoints, _moveTime, PathType.Linear).SetLookAt(_lookIndex).SetEase(Ease.Linear);
     }
 
