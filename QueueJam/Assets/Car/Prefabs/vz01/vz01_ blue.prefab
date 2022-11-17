@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 2126719612463148382}
   - component: {fileID: 2073231938215972503}
   - component: {fileID: 2658451115037859186}
+  - component: {fileID: 1263241917515431364}
   m_Layer: 0
   m_Name: vz01_ blue
   m_TagString: Untagged
@@ -502,6 +503,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carSound: {fileID: 2073231938215972503}
+--- !u!114 &1263241917515431364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356091544070920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e74bfc99664b5e48a22fa0f57d0dbb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 4387505799034938}
 --- !u!1 &1586717052475274
 GameObject:
   m_ObjectHideFlags: 0

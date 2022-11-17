@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetInCarParticlesHandler : MonoBehaviour
+public class GetInCarEffectsHandler : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _getInCarEffects;
+    [SerializeField] private BorderSoundSystem _borderSound;
 
     private Coroutine _coroutine;
     private List<GameObject> _gameObjects;
     private MoveHandler _handler;
+    private CarAnimationHandler _animationHandler;
     int index = -1;
 
     private void Start()
@@ -16,8 +18,18 @@ public class GetInCarParticlesHandler : MonoBehaviour
         _gameObjects = new List<GameObject>();
     }
 
+    public void SetCar(GameObject car)
+    {
+        if (car.TryGetComponent(out CarAnimationHandler carAnimation))
+        {
+            _animationHandler = carAnimation;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
+        int minusOne = -1;
+
         if (other.gameObject.TryGetComponent(out MoveHandler moveHandler))
         {
             index++;
@@ -32,24 +44,20 @@ public class GetInCarParticlesHandler : MonoBehaviour
                 if (index >= _gameObjects.Count)
                 {
                     _coroutine = StartCoroutine(ShowGetInCarEffect(_gameObjects.Count,other.transform));
-                    index = -1;
+                    index = minusOne;
                     _gameObjects.Clear();
                 }
             }
         }
     }
 
-
-
-    private void Update()
-    {
-        Debug.Log(_gameObjects.Count);
-    }
-
     private IEnumerator ShowGetInCarEffect(int index, Transform spawnPoint)
     {
+        float wait = 2f;
+        var waitType = new WaitForSeconds(wait);
         GameObject activeEffect = Instantiate(_getInCarEffects[index], spawnPoint.position, Quaternion.LookRotation(Vector3.up));
-        yield return new WaitForSeconds(1.5f);
+        _borderSound.PlaySound(index);
+        yield return waitType;
         activeEffect.SetActive(false);
     }
 }

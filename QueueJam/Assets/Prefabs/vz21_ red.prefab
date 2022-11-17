@@ -9703,6 +9703,7 @@ GameObject:
   - component: {fileID: 4003666209012711534}
   - component: {fileID: 5943584346544529107}
   - component: {fileID: 5943333352468089342}
+  - component: {fileID: 8278550081542495990}
   m_Layer: 0
   m_Name: vz21_ red
   m_TagString: Untagged
@@ -9869,6 +9870,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.46, z: 1.33}
+--- !u!114 &8278550081542495990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398103739495003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e74bfc99664b5e48a22fa0f57d0dbb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 8402317868407605098}
 --- !u!1 &8398109062462894452
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6236649704753287028}
   - component: {fileID: 6628672068140083941}
   - component: {fileID: 70013729204573335}
+  - component: {fileID: 199843915794571428}
   m_Layer: 0
   m_Name: gz21_ green
   m_TagString: Untagged
@@ -178,6 +179,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carSound: {fileID: 6628672068140083941}
+--- !u!114 &199843915794571428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477293461077286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e74bfc99664b5e48a22fa0f57d0dbb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 4970666935322278}
 --- !u!1 &1503209512500888
 GameObject:
   m_ObjectHideFlags: 0
