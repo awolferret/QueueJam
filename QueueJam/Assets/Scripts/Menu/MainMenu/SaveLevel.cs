@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class SaveLevel : MonoBehaviour
 {
-    [SerializeField] private Counter _counter;
-
     private int _levelNumber;
     private Scene _scene;
     private const string _level = "Level";

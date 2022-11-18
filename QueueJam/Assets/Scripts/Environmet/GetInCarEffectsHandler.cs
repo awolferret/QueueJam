@@ -6,11 +6,13 @@ public class GetInCarEffectsHandler : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _getInCarEffects;
     [SerializeField] private BorderSoundSystem _borderSound;
+    [SerializeField] private ScoreHandler _scoreHandler;
 
     private Coroutine _coroutine;
     private List<GameObject> _gameObjects;
     private MoveHandler _handler;
     private CarAnimationHandler _animationHandler;
+    private CarScoreEffect _carScore;
     int index = -1;
 
     private void Start()
@@ -23,6 +25,11 @@ public class GetInCarEffectsHandler : MonoBehaviour
         if (car.TryGetComponent(out CarAnimationHandler carAnimation))
         {
             _animationHandler = carAnimation;
+
+            if (car.TryGetComponent(out CarScoreEffect carScoreEffect))
+            {
+                _carScore = carScoreEffect;
+            }
         }
     }
 
@@ -45,6 +52,8 @@ public class GetInCarEffectsHandler : MonoBehaviour
                 {
                     _coroutine = StartCoroutine(ShowGetInCarEffect(_gameObjects.Count,other.transform));
                     _animationHandler.PlayEffect(_gameObjects.Count);
+                    _carScore.PlayEffect(_gameObjects.Count);
+                    _scoreHandler.AddScore(_gameObjects.Count);
                     index = minusOne;
                     _gameObjects.Clear();
                 }

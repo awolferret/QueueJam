@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3298718093545875783}
   - component: {fileID: 3298718093545875782}
   - component: {fileID: 3298718093545875779}
-  - component: {fileID: 8775161571476914681}
+  - component: {fileID: 481802822065948112}
   m_Layer: 0
   m_Name: EndLevelTringger
   m_TagString: Untagged
@@ -115,10 +115,22 @@ MonoBehaviour:
   _winSoundFirst: {fileID: 8300000, guid: 0a165517a0291f847a3683342d6421cd, type: 3}
   _winSoundSecond: {fileID: 8300000, guid: 921df60c27bf7ac4da23187a7694c91c, type: 3}
   _audioSource: {fileID: 8505741572463898273, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
-  _saveLevel: {fileID: 8775161571476914681}
+  _saveLevel: {fileID: 481802822065948112}
   _levelComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6921991868654634402, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+        m_TargetAssemblyTypeName: ScoreHandler, Assembly-CSharp
+        m_MethodName: ShowOnWinPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &3298718093545875779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,7 +147,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8775161571476914681
+--- !u!114 &481802822065948112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,4 +159,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36860e5f7b06d574c8b0c19e793a7d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _counter: {fileID: 282166494674926882, guid: ea47e5d61256c364498889c2422d4f3f, type: 3}
+  _counter: {fileID: 0}

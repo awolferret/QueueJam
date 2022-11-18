@@ -162,6 +162,7 @@ MonoBehaviour:
   - {fileID: 5626794573398614867, guid: 1e94ccdd15225e04cabed75f5043a4f9, type: 3}
   - {fileID: 5626794573398614867, guid: 9267ba92b2a33c549915c36edeae2517, type: 3}
   _borderSound: {fileID: 3536693144791613742}
+  _scoreHandler: {fileID: 6921991868654634402, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
 --- !u!114 &3536693144791613742
 MonoBehaviour:
   m_ObjectHideFlags: 0

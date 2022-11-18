@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: _waypoints.Array.data[3].z
       value: 6.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8758046770025139521, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
+      propertyPath: _scoreHandler
+      value: 
+      objectReference: {fileID: 898964054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
 --- !u!1001 &48389492
@@ -528,6 +532,10 @@ PrefabInstance:
       propertyPath: _waypoints.Array.data[3].z
       value: 6.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8758046770025139521, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
+      propertyPath: _scoreHandler
+      value: 
+      objectReference: {fileID: 898964054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
 --- !u!1 &260299894 stripped
@@ -927,6 +935,10 @@ PrefabInstance:
       propertyPath: _waypoints.Array.data[3].z
       value: 6.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8758046770025139521, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
+      propertyPath: _scoreHandler
+      value: 
+      objectReference: {fileID: 898964054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
 --- !u!1 &495368030 stripped
@@ -1245,6 +1257,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 548866533949645676, guid: cd2d68cd2f2795d49bad27499cb9ea96, type: 3}
   m_PrefabInstance: {fileID: 1303803211}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &898964054 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6921991868654634402, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+  m_PrefabInstance: {fileID: 962239250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07533f78cb759dd43a9af90ff2f26a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &928955930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1376,6 +1399,10 @@ PrefabInstance:
       propertyPath: _waypoints.Array.data[3].z
       value: 6.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8758046770025139521, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
+      propertyPath: _scoreHandler
+      value: 
+      objectReference: {fileID: 898964054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
 --- !u!1001 &938347801
@@ -1513,6 +1540,10 @@ PrefabInstance:
     - target: {fileID: 8113440504168366402, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -4.999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290417138353386678, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8505741572214447178, guid: 9533e6fbecb8fd544b69a5898fb5c356, type: 3}
       propertyPath: m_AnchoredPosition.y

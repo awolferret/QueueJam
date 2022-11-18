@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 5585455972070044778}
   - component: {fileID: 8299901904742246658}
   - component: {fileID: 6352057328847593364}
+  - component: {fileID: 8451076417637208152}
   m_Layer: 0
   m_Name: vz04_ blue
   m_TagString: Untagged
@@ -517,6 +518,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 4629556578639194}
+--- !u!114 &8451076417637208152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908306620942388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b8e2ef28e66464ab2493c5b29c486e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 7653375908253527852}
+  _scoreEffects:
+  - {fileID: 7400000, guid: 1b7def29f6eee464bb3380ae8658a58f, type: 2}
+  - {fileID: 7400000, guid: 31a858be5ddb77b4380636c9ad537ede, type: 2}
+  - {fileID: 7400000, guid: cfd1a7b95d4e0604e88142c93847f842, type: 2}
+  - {fileID: 7400000, guid: a7107aef41b38e040b82af96e889fb16, type: 2}
+  - {fileID: 7400000, guid: 02ddf58f294893642ae7a2367419f149, type: 2}
+  - {fileID: 7400000, guid: 99f7031f7751a3f4ba5a7f068eb179f1, type: 2}
 --- !u!1 &1964639264274042
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,5 +719,10 @@ PrefabInstance:
 --- !u!224 &2553318310601395236 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4020703756774849642, guid: 3e96df6c821e06a4684b7a3395dcedd0, type: 3}
+  m_PrefabInstance: {fileID: 1487135355747512398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7653375908253527852 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9121228973286285154, guid: 3e96df6c821e06a4684b7a3395dcedd0, type: 3}
   m_PrefabInstance: {fileID: 1487135355747512398}
   m_PrefabAsset: {fileID: 0}

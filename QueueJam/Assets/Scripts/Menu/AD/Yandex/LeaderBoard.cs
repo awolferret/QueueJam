@@ -7,9 +7,8 @@ public class LeaderBoard : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _playerCards;
 
-    private const string _leaderboardName = "LevelsPassed";
-    private const string _level = "Level";
-    private int _currentLevelsPassed;
+    private const string _score = "Score";
+    private int _currentScore;
 
     private void Awake()
     {
@@ -30,14 +29,13 @@ public class LeaderBoard : MonoBehaviour
     }
 
     private void LoadData()
-    {
-        int one = 1;
-        _currentLevelsPassed = PlayerPrefs.GetInt(_level) - one;
+    { 
+        _currentScore = PlayerPrefs.GetInt(_score);
     }
 
     private void SetLeaderboard()
     {
-        Leaderboard.SetScore(_leaderboardName, _currentLevelsPassed);
+        Leaderboard.SetScore(_score, _currentScore);
     }
 
     private void Authorize()
@@ -54,7 +52,7 @@ public class LeaderBoard : MonoBehaviour
     {
         int one = 1;
 
-        Leaderboard.GetEntries(_leaderboardName, (result) =>
+        Leaderboard.GetEntries(_score, (result) =>
         {
             Debug.Log($"My rank = {result.userRank}");
             foreach (var entry in result.entries)
@@ -84,7 +82,7 @@ public class LeaderBoard : MonoBehaviour
 
     private void GetLeaderboardPlayer()
     {
-        Leaderboard.GetPlayerEntry(_leaderboardName, (result) =>
+        Leaderboard.GetPlayerEntry(_score, (result) =>
         {
             if (result == null)
                 Debug.Log("Player is not present in the leaderboard.");

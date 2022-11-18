@@ -21,10 +21,10 @@ public class EndLevelTrigger : MonoBehaviour
 
             if (_currentValue == _value)
             {
-                _levelComplete?.Invoke();
                 _audioSource.PlayOneShot(_winSoundFirst);
                 _audioSource.PlayOneShot(_winSoundSecond);
                 _winPanel.SetActive(true);
+                _levelComplete?.Invoke();
                 _saveLevel.Save();
             }
         }
