@@ -1615,6 +1615,18 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 1403003780}
+    - target: {fileID: 3298718093545875782, guid: 7e7af093e8c4d754497068e993cd39c6, type: 3}
+      propertyPath: _levelComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1051495788}
+    - target: {fileID: 3298718093545875782, guid: 7e7af093e8c4d754497068e993cd39c6, type: 3}
+      propertyPath: _levelComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowBannerAd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298718093545875782, guid: 7e7af093e8c4d754497068e993cd39c6, type: 3}
+      propertyPath: _levelComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: YandexSDK, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e7af093e8c4d754497068e993cd39c6, type: 3}
 --- !u!1 &769178629 stripped
@@ -1850,7 +1862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2242914562426874791, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: -0.165
       objectReference: {fileID: 0}
     - target: {fileID: 2242914562426874791, guid: de05731e0e3474e4a96aae1bcef5b322, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2397,6 +2409,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9a37f9e614b3141879c8c57c7c7c3b, type: 3}
+--- !u!114 &1051495788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3077519089455207701, guid: af9a37f9e614b3141879c8c57c7c7c3b, type: 3}
+  m_PrefabInstance: {fileID: 1051495787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f8e0dd482c0344385adc7fa5f3115f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1062000436
 GameObject:
   m_ObjectHideFlags: 0

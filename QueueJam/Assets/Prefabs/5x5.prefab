@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6888632040841735607
 Transform:
@@ -113,7 +113,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2903415530568624494
 Transform:
@@ -208,7 +208,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3268141428284733000
 Transform:
@@ -290,7 +290,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4582470198359271378
 Transform:
@@ -385,7 +385,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2437394707445240169
 Transform:
@@ -467,7 +467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7413299508114240294
 Transform:
@@ -563,7 +563,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8639860047840026541
 Transform:
@@ -659,7 +659,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2537330660068370377
 Transform:
@@ -754,7 +754,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2880955730495382667
 Transform:
@@ -835,7 +835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6737705484578070210
 Transform:
@@ -917,7 +917,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1544034955721099065
 Transform:
@@ -1012,7 +1012,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3497627844342877068
 Transform:
@@ -1094,7 +1094,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4076331698069221909
 Transform:
@@ -1189,7 +1189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3918477239648802064
 Transform:
@@ -1270,7 +1270,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &852811683828721718
 Transform:
@@ -1351,7 +1351,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &850168553877296159
 Transform:
@@ -1432,7 +1432,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8416392392130572889
 Transform:
@@ -1514,7 +1514,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7529751527074606235
 Transform:
@@ -1609,7 +1609,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7231421802979561979
 Transform:
@@ -1691,7 +1691,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1151526221616555513
 Transform:
@@ -1787,7 +1787,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3177079345150306656
 Transform:
@@ -1882,7 +1882,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3461745449112811288
 Transform:
@@ -1964,7 +1964,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5822840064555848681
 Transform:
@@ -2059,7 +2059,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7564099851122356829
 Transform:
@@ -2140,7 +2140,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3947838361672482222
 Transform:
@@ -2221,7 +2221,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1963918792262044405
 Transform:
@@ -2302,7 +2302,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4357675959979981420
 Transform:
@@ -2384,7 +2384,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5822948407865800656
 Transform:
@@ -2480,7 +2480,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7250648515614768944
 Transform:
@@ -2576,7 +2576,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3145028732086858088
 Transform:
@@ -2672,7 +2672,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5815788497763953246
 Transform:
@@ -2768,7 +2768,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8857212099502985722
 Transform:
@@ -2863,7 +2863,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6037933311597413091
 Transform:
@@ -2944,7 +2944,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5322414304582771346
 Transform:
@@ -3025,7 +3025,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4021444225542380485
 Transform:
@@ -3106,7 +3106,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6548849850196552598
 Transform:
@@ -3187,7 +3187,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9165109812110434097
 Transform:
@@ -3268,7 +3268,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3557573798943649439
 Transform:
@@ -3350,7 +3350,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8005454637527842772
 Transform:
@@ -3446,7 +3446,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8559220031857662488
 Transform:
@@ -3541,7 +3541,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2562868498879714146
 Transform:
@@ -3622,7 +3622,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &640516582406559145
 Transform:
@@ -3703,7 +3703,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8178841093620252873
 Transform:
@@ -3784,7 +3784,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7460824148117262806
 Transform:
@@ -3866,7 +3866,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6806337873405332061
 Transform:
@@ -3961,7 +3961,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6795835915505986407
 Transform:
@@ -4042,7 +4042,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5147218391009959026
 Transform:
@@ -4123,7 +4123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &669797075235577232
 Transform:
@@ -4205,7 +4205,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4016608667534722474
 Transform:
@@ -4301,7 +4301,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9061832275638539276
 Transform:
@@ -4396,7 +4396,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7310047163858341588
 Transform:
@@ -4478,7 +4478,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1527084875382578523
 Transform:
@@ -4574,7 +4574,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4032722764460698582
 Transform:
@@ -4670,7 +4670,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8215412503264603853
 Transform:
@@ -4765,7 +4765,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2245304812314640589
 Transform:
@@ -4846,7 +4846,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5155016007528540295
 Transform:
@@ -4927,7 +4927,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4107699606575400858
 Transform:
@@ -5008,7 +5008,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1556622856494136582
 Transform:
@@ -5089,7 +5089,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3171862260713495209
 Transform:
@@ -5170,7 +5170,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2873362824074872162
 Transform:
@@ -5251,7 +5251,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1348710532250341441
 Transform:
@@ -5333,7 +5333,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3388711683696292171
 Transform:
@@ -5483,6 +5483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (183)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &726615009933178006
@@ -5555,6 +5559,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (182)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -5629,6 +5637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (219)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &797458240124150818
@@ -5701,6 +5713,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
       propertyPath: m_Name
       value: brick (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
@@ -5775,6 +5791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (188)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1064718649332546607
@@ -5847,6 +5867,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (173)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -5921,6 +5945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (195)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1209034172649802106
@@ -5993,6 +6021,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (186)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6067,6 +6099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (159)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1324884935011030211
@@ -6139,6 +6175,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (214)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6213,6 +6253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &1449666034233087802
@@ -6285,6 +6329,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (192)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6359,6 +6407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (176)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1457435813400940741
@@ -6431,6 +6483,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (161)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6505,6 +6561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (216)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1597757938889448940
@@ -6577,6 +6637,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (220)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6651,6 +6715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &1627164525250436282
@@ -6723,6 +6791,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (191)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -6797,6 +6869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (217)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1706856489450015965
@@ -6869,6 +6945,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
       propertyPath: m_Name
       value: brick (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
@@ -6943,6 +7023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (222)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1810926115611376163
@@ -7015,6 +7099,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (148)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7089,6 +7177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (202)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &1926223359297934166
@@ -7161,6 +7253,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
       propertyPath: m_Name
       value: brick (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
@@ -7235,6 +7331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &1957638060492813920
@@ -7307,6 +7407,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7381,6 +7485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (213)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &2105676672399470089
@@ -7453,6 +7561,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (165)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7527,6 +7639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (201)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &2154630138911481020
@@ -7599,6 +7715,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (160)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7673,6 +7793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (175)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &2299280058054437030
@@ -7745,6 +7869,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (172)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7819,6 +7947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &2403516160597148235
@@ -7891,6 +8023,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (203)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -7965,6 +8101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &2485673132065825285
@@ -8037,6 +8177,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (171)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8111,6 +8255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (150)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &2864531473108494246
@@ -8183,6 +8331,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (187)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8257,6 +8409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (199)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &3249711502054296333
@@ -8329,6 +8485,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (209)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8403,6 +8563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (162)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &3524127769568250030
@@ -8475,6 +8639,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (181)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8549,6 +8717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (158)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &3784100759509380150
@@ -8621,6 +8793,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (190)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8695,6 +8871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (200)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &3853170714845987848
@@ -8767,6 +8947,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8841,6 +9025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &4004208238413152268
@@ -8913,6 +9101,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (185)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -8987,6 +9179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (152)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &4222656581445436497
@@ -9059,6 +9255,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (177)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9133,6 +9333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &4334256882015941553
@@ -9205,6 +9409,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (153)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9279,6 +9487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (155)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &4677925375119606883
@@ -9351,6 +9563,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (198)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9425,6 +9641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (144)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &4751598139710601413
@@ -9497,6 +9717,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9571,6 +9795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &5115024714998455596
@@ -9643,6 +9871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (149)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9717,6 +9949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &5430083307488305665
@@ -9789,6 +10025,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (156)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -9863,6 +10103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &5693137225972181341
@@ -9935,6 +10179,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (170)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10009,6 +10257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (196)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &5734323829554331429
@@ -10081,6 +10333,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (146)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10155,6 +10411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (223)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &5961030406673769881
@@ -10227,6 +10487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (221)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10301,6 +10565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (154)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &6140817282319470516
@@ -10373,6 +10641,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (212)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10447,6 +10719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (211)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &6320617732234180242
@@ -10519,6 +10795,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (164)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10593,6 +10873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (168)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &6409311821774335245
@@ -10665,6 +10949,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (218)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -10739,6 +11027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (210)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &6962930322166761418
@@ -10811,6 +11103,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
       propertyPath: m_Name
       value: brick (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
@@ -10885,6 +11181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (179)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &7068681627955419631
@@ -10957,6 +11257,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (205)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11031,6 +11335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (194)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &7314150177054120531
@@ -11103,6 +11411,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (193)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11177,6 +11489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (151)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &7646668795775071389
@@ -11249,6 +11565,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (169)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11323,6 +11643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (157)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &7932661098532055402
@@ -11395,6 +11719,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (147)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11469,6 +11797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (184)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &8049503494017839260
@@ -11541,6 +11873,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (204)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11615,6 +11951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (167)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &8223880478721225304
@@ -11687,6 +12027,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
       propertyPath: m_Name
       value: brick (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
@@ -11761,6 +12105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (224)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &8505650001057058391
@@ -11833,6 +12181,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (197)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -11907,6 +12259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (208)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &8742456689008029041
@@ -11979,6 +12335,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -12053,6 +12413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (207)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &8884583470223251570
@@ -12125,6 +12489,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (206)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -13381,7 +13749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237612208603005080, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_RootOrder
-      value: 188
+      value: 198
       objectReference: {fileID: 0}
     - target: {fileID: 4237612208603005080, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13437,7 +13805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4378602415719597962, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_RootOrder
-      value: 198
+      value: 193
       objectReference: {fileID: 0}
     - target: {fileID: 4389649674670532553, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_RootOrder
@@ -15173,7 +15541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8476453542294225711, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_RootOrder
-      value: 193
+      value: 188
       objectReference: {fileID: 0}
     - target: {fileID: 8497624564008504244, guid: 44e64f52a089f084e8e05c54f21c55a3, type: 3}
       propertyPath: m_RootOrder
@@ -15556,6 +15924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPlane (215)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
 --- !u!1001 &9164296991151200063
@@ -15628,6 +16000,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (178)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
@@ -15702,6 +16078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe89398efca96e546b3206b2fe47815f, type: 3}
 --- !u!1001 &9201614334614096123
@@ -15774,6 +16154,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
       propertyPath: m_Name
       value: StreetPlane (189)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e4ea6fceaa7324b88e6d7b2f7c6974, type: 3}

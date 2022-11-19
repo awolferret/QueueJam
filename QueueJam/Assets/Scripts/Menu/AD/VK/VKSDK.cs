@@ -38,10 +38,10 @@ public class VKSDK : MonoBehaviour
         }
     }
 #if VK_GAMES
-    public void ShowRewardedAds()
-    {
-        VideoAd.Show(onRewardedCallback: OnRewardViewedVK.Invoke);
-    }
+  public void ShowRewardedAds()
+  {
+      VideoAd.Show(onRewardedCallback: OnRewardViewedVK.Invoke);
+  }
 #endif
     public void InviteFriends()
     {

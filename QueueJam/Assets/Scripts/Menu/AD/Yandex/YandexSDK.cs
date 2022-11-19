@@ -14,7 +14,7 @@ public class YandexSDK : MonoBehaviour
         YandexGamesSdk.CallbackLogging = true;
     }
 
-#endif
+
     private IEnumerator Start()
     {
 #if !UNITY_WEBGL || UNITY_EDITOR 
@@ -23,14 +23,15 @@ public class YandexSDK : MonoBehaviour
         yield return YandexGamesSdk.Initialize();
         ShowBannerAd();
     }
-#if YANDEX_GAMES 
+
     public void ShowRewardAd()
     {
         VideoAd.Show(onRewardedCallback: OnRewardViewedYandex.Invoke);
     }
-#endif
-    private void ShowBannerAd()
+
+    public void ShowBannerAd()
     {
         InterstitialAd.Show();
     }
+#endif
 }
