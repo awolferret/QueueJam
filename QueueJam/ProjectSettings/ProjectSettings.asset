@@ -586,7 +586,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 1
   scriptingDefineSymbols:
-    13: YANDEX_GAMES
+    13: VK_GAMES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

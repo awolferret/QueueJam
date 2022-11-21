@@ -28,7 +28,6 @@ public class LineDrawer : MonoBehaviour
     {
         float one = 1;
         float width = 0.6f;
-        float divider = 0.75f;
 
         if (_isDrawing == true)
         {
@@ -40,20 +39,43 @@ public class LineDrawer : MonoBehaviour
 
             if (transform.forward == new Vector3(0, 0, one))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.y * divider, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.y, 0);
+
+                LimitArrow(width);
             }
             else if (transform.forward == new Vector3(0, 0, -one))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.y * divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.y, 0);
+
+                LimitArrow(width);
             }
             else if (transform.forward == new Vector3(one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, -delta.x * divider, 0);
+                _arrow.transform.localScale = new Vector3(width, -delta.x, 0);
+
+                LimitArrow(width);
             }
             else if (transform.forward == new Vector3(-one, 0, 0))
             {
-                _arrow.transform.localScale = new Vector3(width, delta.x * divider, 0);
+                _arrow.transform.localScale = new Vector3(width, delta.x, 0);
+
+                LimitArrow(width);
             }
+        }
+    }
+
+    private void LimitArrow(float width)
+    {
+        float limiter = 1.5f;
+
+        if (_arrow.transform.localScale.y < -limiter)
+        {
+            _arrow.transform.localScale = new Vector3(width, -limiter, 0);
+        }
+
+        if (_arrow.transform.localScale.y > limiter)
+        {
+            _arrow.transform.localScale = new Vector3(width, limiter, 0);
         }
     }
 
@@ -76,5 +98,4 @@ public class LineDrawer : MonoBehaviour
         _mainCamera = Camera.main;
         _playerInput.Enable();
     }
-
 }

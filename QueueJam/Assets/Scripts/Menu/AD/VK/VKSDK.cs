@@ -5,7 +5,6 @@ using System;
 
 public class VKSDK : MonoBehaviour
 {
-    private bool _isReady = false;
     public static event Action OnRewardViewedVK;
 
 #if VK_GAMES
@@ -17,26 +16,13 @@ public class VKSDK : MonoBehaviour
     private IEnumerator InitializeSDK()
     {
         yield return VKGamesSdk.Initialize();
-        ShowInterstitial();
-    }
-
-    private IEnumerator AdCooldown()
-    {
-        float time = 180f;
-        var wait = new WaitForSecondsRealtime(time);
-        yield return wait;
-        _isReady = true;
     }
 
     public void ShowInterstitial()
     {
-        if (_isReady == true)
-        {
-            Interstitial.Show();
-            _isReady = false;
-            StartCoroutine(AdCooldown());
-        }
+        Interstitial.Show();
     }
+
 #if VK_GAMES
   public void ShowRewardedAds()
   {
