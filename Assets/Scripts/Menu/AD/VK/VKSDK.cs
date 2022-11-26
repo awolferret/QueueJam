@@ -17,11 +17,12 @@ public class VKSDK : MonoBehaviour
     {
         yield return VKGamesSdk.Initialize();
     }
-
+#if VK_GAMES
     public void ShowInterstitial()
     {
         Interstitial.Show();
     }
+#endif
 
 #if VK_GAMES
   public void ShowRewardedAds()

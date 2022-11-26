@@ -1,5 +1,5 @@
 using UnityEngine;
-using IJunior.TypedScenes;
+using UnityEngine.SceneManagement;
 
 public class ExitButton : MonoBehaviour
 {
@@ -7,6 +7,6 @@ public class ExitButton : MonoBehaviour
     {
         float timeGo = 1f;
         Time.timeScale = timeGo;
-        Menu.Load();
+        SceneManager.LoadScene(0); ;
     }
 }
