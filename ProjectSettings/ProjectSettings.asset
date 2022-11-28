@@ -147,6 +147,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -701,7 +702,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 1
   scriptingDefineSymbols:
-    WebGL: VK_GAMES
+    WebGL: YANDEX_GAMES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

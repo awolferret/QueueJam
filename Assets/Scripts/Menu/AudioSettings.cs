@@ -11,13 +11,10 @@ public class AudioSettings : MonoBehaviour
     [SerializeField] private Sprite _midPicture;
     [SerializeField] private Sprite _offPicture;
 
-    private string _audioSaveName = "AudioSave";
-
     public void ChangeVolume()
     {
         float half = 0.5f;
         AudioListener.volume = _slider.value;
-        PlayerPrefs.SetFloat(_audioSaveName, AudioListener.volume);
 
         if (_slider.value == 0)
         {

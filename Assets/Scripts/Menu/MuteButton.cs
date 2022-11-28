@@ -8,6 +8,7 @@ public class MuteButton : MonoBehaviour
     [SerializeField] private Sprite _unmuteImage;
 
     private float _fullVolume = 1f;
+    private string _volumeMuted = "VolumeMuted";
 
     public void MuteVolume()
     {
@@ -15,11 +16,13 @@ public class MuteButton : MonoBehaviour
         {
             _icon.sprite = _unmuteImage;
             AudioListener.volume = 0;
+            PlayerPrefs.SetInt(_volumeMuted,1);
         }
         else
         {
             _icon.sprite = _muteImage;
             AudioListener.volume = _fullVolume;
+            PlayerPrefs.SetInt(_volumeMuted, 0);
         }
     }
 }
