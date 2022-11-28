@@ -28,6 +28,7 @@ public class VKSDK : MonoBehaviour
   public void ShowRewardedAds()
   {
       VideoAd.Show(onRewardedCallback: OnRewardViewedVK.Invoke);
+      AudioListener.volume = 0f;
   }
 #endif
     public void InviteFriends()

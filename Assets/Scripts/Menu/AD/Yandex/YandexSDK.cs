@@ -27,6 +27,7 @@ public class YandexSDK : MonoBehaviour
     public void ShowRewardAd()
     {
         VideoAd.Show(onRewardedCallback: OnRewardViewedYandex.Invoke);
+        AudioListener.volume = 0f;
     }
 
     public void ShowBannerAd()

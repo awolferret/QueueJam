@@ -11,6 +11,8 @@ public class ScoreHandler : MonoBehaviour
 
     private int _score;
     private int _currentScore = 0;
+    private int _double = 2;
+    private float _soundOn = 1f;
     private const string _scoreName = "Score";
 
     public void AddScore(int multiplier)
@@ -34,6 +36,7 @@ public class ScoreHandler : MonoBehaviour
     {
         _currentScore *= 2;
         _winPanelCurrentText.text = _currentScore.ToString();
+        AudioListener.volume = 1f;
     }
 
     private void Update()
