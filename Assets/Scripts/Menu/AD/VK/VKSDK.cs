@@ -7,6 +7,9 @@ public class VKSDK : MonoBehaviour
 {
     public static event Action OnRewardViewedVK;
 
+    private float _fullVolume = 1f;
+    private string _adPlaying = "AdPlaying";
+
 #if VK_GAMES
     private void Awake()
     {
@@ -29,6 +32,7 @@ public class VKSDK : MonoBehaviour
   {
       VideoAd.Show(onRewardedCallback: OnRewardViewedVK.Invoke);
       AudioListener.volume = 0f;
+      PlayerPrefs.SetInt(_adPlaying,1);
   }
 #endif
     public void InviteFriends()

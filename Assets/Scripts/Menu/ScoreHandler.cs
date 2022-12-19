@@ -14,10 +14,12 @@ public class ScoreHandler : MonoBehaviour
     private int _double = 2;
     private float _soundOn = 1f;
     private const string _scoreName = "Score";
+    private string _volumeMuted = "VolumeMuted";
+    private string _adPlaying = "AdPlaying";
 
     public void AddScore(int multiplier)
     {
-        _currentScore += 10 * (multiplier+1);
+        _currentScore += 10 * (multiplier + 1);
     }
 
     public void SaveScore()
@@ -36,7 +38,12 @@ public class ScoreHandler : MonoBehaviour
     {
         _currentScore *= 2;
         _winPanelCurrentText.text = _currentScore.ToString();
-        AudioListener.volume = 1f;
+
+        if (PlayerPrefs.GetInt(_volumeMuted) == 0)
+        {
+            PlayerPrefs.SetInt(_adPlaying, 0);
+            AudioListener.volume = 1f;
+        }
     }
 
     private void Update()

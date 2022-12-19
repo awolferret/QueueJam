@@ -8,12 +8,13 @@ public class YandexSDK : MonoBehaviour
 {
     public static event Action OnRewardViewedYandex;
 
+    private string _adPlaying = "AdPlaying";
+
 #if YANDEX_GAMES 
     private void Awake()
     {
         YandexGamesSdk.CallbackLogging = true;
     }
-
 
     private IEnumerator Start()
     {
@@ -28,6 +29,7 @@ public class YandexSDK : MonoBehaviour
     {
         VideoAd.Show(onRewardedCallback: OnRewardViewedYandex.Invoke);
         AudioListener.volume = 0f;
+        PlayerPrefs.SetInt(_adPlaying,1);
     }
 
     public void ShowBannerAd()
