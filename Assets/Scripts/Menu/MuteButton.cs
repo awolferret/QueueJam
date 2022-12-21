@@ -14,13 +14,13 @@ public class MuteButton : MonoBehaviour
     {
         if (AudioListener.volume != 0)
         {
-            _icon.sprite = _unmuteImage;
+            _icon.sprite = _muteImage;
             AudioListener.volume = 0;
             PlayerPrefs.SetInt(_volumeMuted,1);
         }
         else
         {
-            _icon.sprite = _muteImage;
+            _icon.sprite = _unmuteImage;
             AudioListener.volume = _fullVolume;
             PlayerPrefs.SetInt(_volumeMuted, 0);
         }

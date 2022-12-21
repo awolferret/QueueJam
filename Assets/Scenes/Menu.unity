@@ -1317,6 +1317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MuteButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2124672315955375546, guid: ab4b852d727faa544abd34275dcfed4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: adaadcc02ee983246941a0baee324584, type: 3}
     - target: {fileID: 3009467301546162151, guid: ab4b852d727faa544abd34275dcfed4b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1860,7 +1864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2505330545392432682, guid: 49615360907900f4a867b2c0333005cf, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2505330545392432682, guid: 49615360907900f4a867b2c0333005cf, type: 3}
       propertyPath: m_AnchorMax.x
