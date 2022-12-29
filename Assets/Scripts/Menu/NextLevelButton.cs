@@ -22,6 +22,14 @@ public class NextLevelButton : MonoBehaviour
         float time = 0.1f;
         var wait = new WaitForSecondsRealtime(time);
         yield return wait;
-        SceneManager.LoadScene(_scene.buildIndex + _one);
+
+        if (_scene.buildIndex == 50)
+        {
+            SceneManager.LoadScene(Random.Range(15, 49));
+        }
+        else
+        {
+            SceneManager.LoadScene(_scene.buildIndex + _one);
+        }
     }
 }

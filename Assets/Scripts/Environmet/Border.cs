@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Border : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Border : MonoBehaviour
     private MoveHandler _handler;
     private Transform _firstPoint;
     private List<GameObject> _gameObjects;
+
+    public static event UnityAction Exit;
 
     private void Start()
     {
@@ -31,6 +34,7 @@ public class Border : MonoBehaviour
             _firstPoint = moveHandler.gameObject.transform;
             _handler = moveHandler;
             _coroutine = StartCoroutine(MoveToExitPoint());
+            Exit?.Invoke();
         }
     }
 

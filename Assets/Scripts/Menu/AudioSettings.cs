@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,26 @@ public class AudioSettings : MonoBehaviour
     [SerializeField] private Sprite _onPicture;
     [SerializeField] private Sprite _midPicture;
     [SerializeField] private Sprite _offPicture;
+
+    private void Update()
+    {
+        float half = 0.5f;
+
+        if (AudioListener.volume == 0)
+        {
+            _image.sprite = _offPicture;
+            _slider.value = 0;
+        }
+        if (AudioListener.volume < half && AudioListener.volume > 0)
+        {
+            _image.sprite = _midPicture;
+        }
+        if (AudioListener.volume >= half)
+        {
+            _image.sprite = _onPicture;
+            _slider.value = 1;
+        }
+    }
 
     public void ChangeVolume()
     {
