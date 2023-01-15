@@ -40,7 +40,6 @@ public class PlayerMouseControl : MonoBehaviour
                 _tutuorialEffect.SetActive(false);
             }
         }
-
     }
 
     private void Canceled()

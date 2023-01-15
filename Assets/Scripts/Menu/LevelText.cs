@@ -10,13 +10,6 @@ public class LevelText : MonoBehaviour
 
     private void Start()
     {
-        //_text.text = (_scene.buildIndex).ToString();
-
-
         _text.text = PlayerPrefs.GetInt(_levelText).ToString();
-
-
-
-        //PlayerPrefs.SetInt(_levelText,495);
     }
 }

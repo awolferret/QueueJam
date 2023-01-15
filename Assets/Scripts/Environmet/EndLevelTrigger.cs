@@ -11,25 +11,10 @@ public class EndLevelTrigger : MonoBehaviour
     [SerializeField] private SaveLevel _saveLevel;
     [SerializeField] private UnityEvent _levelComplete;
 
+    public static event UnityAction LevelEnd;
+
     private int _currentValue;
     private int _count = 0;
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.TryGetComponent(out Car car))
-    //    {
-    //        _currentValue++;
-
-    //        if (_currentValue == _value)
-    //        {
-    //            _audioSource.PlayOneShot(_winSoundFirst);
-    //            _audioSource.PlayOneShot(_winSoundSecond);
-    //            _winPanel.SetActive(true);
-    //            _levelComplete?.Invoke();
-    //            _saveLevel.Save();
-    //        }
-    //    }
-    //}
 
     private void OnEnable()
     {
@@ -56,7 +41,7 @@ public class EndLevelTrigger : MonoBehaviour
         _audioSource.PlayOneShot(_winSoundFirst);
         _audioSource.PlayOneShot(_winSoundSecond);
         _winPanel.SetActive(true);
-        _levelComplete?.Invoke();
+        LevelEnd?.Invoke();
         _saveLevel.Save();
     }
 }

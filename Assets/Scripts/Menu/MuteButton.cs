@@ -9,6 +9,7 @@ public class MuteButton : MonoBehaviour
 
     private float _fullVolume = 1f;
     private string _volumeMuted = "VolumeMuted";
+    private string _volume = "Volume";
 
     private void Update()
     {
@@ -26,15 +27,14 @@ public class MuteButton : MonoBehaviour
     {
         if (AudioListener.volume != 0)
         {
-            //_icon.sprite = _muteImage;
             AudioListener.volume = 0;
             PlayerPrefs.SetInt(_volumeMuted,1);
         }
         else
         {
-            //_icon.sprite = _unmuteImage;
-            AudioListener.volume = _fullVolume;
+            AudioListener.volume = PlayerPrefs.GetFloat(_volume);//_fullVolume;
             PlayerPrefs.SetInt(_volumeMuted, 0);
+            PlayerPrefs.SetFloat(_volume, AudioListener.volume);
         }
     }
 }

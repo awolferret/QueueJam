@@ -5,6 +5,8 @@ namespace Agava.WebUtility.Samples
     public class PlaytestingCanvasSound : MonoBehaviour
     {
         private string _volumeMuted = "VolumeMuted";
+        private string _adPlaying = "AdPlaying";
+        private string _volume = "Volume";
 
         private void OnEnable()
         {
@@ -22,9 +24,9 @@ namespace Agava.WebUtility.Samples
             // They're both broken in Web, but work perfect together. Trust me on this.
             AudioListener.pause = inBackground;
 
-            if (PlayerPrefs.GetInt(_volumeMuted) == 0)
+            if (PlayerPrefs.GetInt(_volumeMuted) == 0 && PlayerPrefs.GetInt(_adPlaying) == 0)
             {
-                AudioListener.volume = inBackground ? 0f : 1f;
+                AudioListener.volume = inBackground ? 0f : PlayerPrefs.GetFloat(_volume);//1f;
             }
         }
     }

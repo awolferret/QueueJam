@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +10,8 @@ public class AudioSettings : MonoBehaviour
     [SerializeField] private Sprite _onPicture;
     [SerializeField] private Sprite _midPicture;
     [SerializeField] private Sprite _offPicture;
+
+    private string _volume = "Volume";
 
     private void Update()
     {
@@ -25,7 +26,7 @@ public class AudioSettings : MonoBehaviour
         {
             _image.sprite = _midPicture;
         }
-        if (AudioListener.volume >= half)
+        if (AudioListener.volume == 1)
         {
             _image.sprite = _onPicture;
             _slider.value = 1;
@@ -49,6 +50,8 @@ public class AudioSettings : MonoBehaviour
         {
             _image.sprite = _onPicture;
         }
+
+        PlayerPrefs.SetFloat(_volume,AudioListener.volume);
     }
 
     public void OpenPanel(GameObject panel)

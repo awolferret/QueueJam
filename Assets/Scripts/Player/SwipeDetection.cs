@@ -25,7 +25,6 @@ public class SwipeDetection : MonoBehaviour
         _delta = Vector2.zero;
         _delta = (Vector2)mouseUpPoint - _mouseDownPoint;
 
-
         if (_delta.magnitude > _minimalDisatanse)
         {
             if (SwipeInput != null)

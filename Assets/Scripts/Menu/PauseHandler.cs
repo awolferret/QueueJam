@@ -5,12 +5,16 @@ public class PauseHandler : MonoBehaviour
 {
     [SerializeField] private Button _pauseButton;
     [SerializeField] private Button _retryButton;
+    [SerializeField] private GameObject _muteButton;
+    [SerializeField] private GameObject _leaderboard;
 
     public void OpenPausePanel(GameObject pausePanel)
     {
         pausePanel.SetActive(true);
-        _pauseButton.enabled = false;
-        _retryButton.enabled = false;
+        _pauseButton.gameObject.SetActive(false);
+        _retryButton.gameObject.SetActive(false);
+        _muteButton.SetActive(false);
+        _leaderboard.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -18,8 +22,28 @@ public class PauseHandler : MonoBehaviour
     {
         float timeGo = 1f;
         pausePanel.SetActive(false);
-        _pauseButton.enabled = true;
-        _retryButton.enabled = true;
+        _pauseButton.gameObject.SetActive(true);
+        _retryButton.gameObject.SetActive(true);
+        _muteButton.SetActive(true);
+        _leaderboard.SetActive(true);
         Time.timeScale = timeGo;
+    }
+
+    private void OnEnable()
+    {
+        EndLevelTrigger.LevelEnd += OffButtons;
+    }
+
+    private void OnDisable()
+    {
+        EndLevelTrigger.LevelEnd -= OffButtons;
+    }
+
+    private void OffButtons()
+    {
+        _pauseButton.gameObject.SetActive(false);
+        _retryButton.gameObject.SetActive(false);
+        _muteButton.SetActive(false);
+        _leaderboard.SetActive(false);
     }
 }

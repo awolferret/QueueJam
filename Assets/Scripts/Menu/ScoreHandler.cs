@@ -20,6 +20,7 @@ public class ScoreHandler : MonoBehaviour
     public void AddScore(int multiplier)
     {
         _currentScore += 10 * (multiplier + 1);
+        _currentScoreText.text = _currentScore.ToString();
     }
 
     public void SaveScore()
@@ -46,27 +47,24 @@ public class ScoreHandler : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void ShowScore()
     {
-        _currentScoreText.text = _currentScore.ToString();
-
-        if (_winPanelCurrentText.enabled == true)
-        {
-            _winPanelCurrentText.text = _currentScore.ToString();
-            _scoreText.text = PlayerPrefs.GetInt(_scoreName).ToString();
-        }
+        _winPanelCurrentText.text = _currentScore.ToString();
+        _scoreText.text = PlayerPrefs.GetInt(_scoreName).ToString();
     }
 
     private void OnEnable()
     {
         YandexSDK.OnRewardViewedYandex += WatchAd;
         VKSDK.OnRewardViewedVK += WatchAd;
+        EndLevelTrigger.LevelEnd += ShowScore;
     }
 
     private void OnDisable()
     {
         YandexSDK.OnRewardViewedYandex -= WatchAd;
         VKSDK.OnRewardViewedVK -= WatchAd;
+        EndLevelTrigger.LevelEnd -= ShowScore;
     }
 
     private void OnApplicationQuit()

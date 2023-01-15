@@ -14,14 +14,14 @@ public class Selectable : MonoBehaviour
     {
         _moveHandler.enabled = true;
         _characterAnimation.PlaySelectedAnimation();
-        _lineDrawer.StartDrawLine();
+        //_lineDrawer.StartDrawLine();
     }
 
     public void OffMove()
     {
         _moveHandler.enabled = false;
         _characterAnimation.Deselect();
-        _lineDrawer.StopDrawLine();
+        //_lineDrawer.StopDrawLine();
     }
 
     private void Start()
